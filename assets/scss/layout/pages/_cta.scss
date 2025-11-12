@@ -1,0 +1,98 @@
+@use '../../utils/' as * ;
+
+/*============= CTA CSS AREA ===============*/
+// Homepage 01 //
+.cta1-aection-area {
+    position: relative;
+    z-index: 2;
+    margin-bottom: -200px;
+    .cta-bg-area {
+        position: relative;
+        z-index: 1;
+        background: var(--ztc-bg-bg-3);
+        border-radius: 16px;
+        padding: 0 60px;
+        @media #{$xs} {
+            padding: 24px 24px 0 24px;
+        }
+        @media #{$md} {
+            padding: 40px 40px 0 40px;
+        }
+        @media #{$lg} {
+            padding: 40px 40px 0 40px;
+        }
+        .elements4 {
+            position: absolute;
+            z-index: -1;
+            right: 0;
+            top: 0;
+        }
+        .cta-images-area {
+            position: relative;
+            z-index: 1;
+            @media #{$xs} {
+               top: 30px;
+            }
+            @media #{$md} {
+               top: 30px;
+            }
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+        }
+
+        .cta-heading {
+            h2 {
+                color: var(--ztc-text-text-1);
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s44);
+                font-style: normal;
+                font-weight: var(--ztc-weight-black);
+                line-height: 54px;
+                @media #{$xs} {
+                    font-size: var(--ztc-font-size-font-s32);
+                    line-height: 40px;
+                }
+            }
+            p {
+                color: rgba(255, 255, 255, 0.90);
+                font-family: var(--ztc-family-font1);
+                font-size: var(--ztc-font-size-font-s18);
+                font-style: normal;
+                font-weight: var(--ztc-weight-medium);
+                line-height: 26px;
+            }
+            .form-area {
+                position: relative;
+                z-index: 1;
+                form {
+                    position: relative;
+                    z-index: 1;
+                    input {
+                        color: var(--ztc-text-text-3);
+                        font-family: var(--ztc-family-font1);
+                        font-size: var(--ztc-font-size-font-s18);
+                        font-style: normal;
+                        font-weight: var(--ztc-weight-medium);
+                        line-height: 18px; /* 100% */    
+                        background: var(--ztc-bg-bg-1);
+                        width: 100%;
+                        padding: 27px 20px;
+                        border-radius: 8px;   
+                    }
+                    button {
+                        border: none;
+                        outline: none;
+                        position: absolute;
+                        right: 10px;
+                        top: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
+/*============= CTA CSS AREA ENDS===============*/

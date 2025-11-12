@@ -1,0 +1,213 @@
+@use '../../utils/' as * ;
+
+/*============= FOOTER CSS AREA ===============*/
+// Homepage 01 //
+.vl-footer1-section-area {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 275px 0 32px;
+    background: var(--ztc-bg-bg-4);
+    .elements2 {
+        position: absolute;
+        top: 100px;
+    }
+    .elements3 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    .footer-logo-area {
+        position: relative;
+        z-index: 1;
+        img {
+            width: 175px;
+            height: 62px;
+            object-fit: contain;
+            filter: brightness(0);
+        }
+        p {
+            color: var(--ztc-text-text-3);
+            font-family: var(--ztc-family-font1);
+            font-size: var(--ztc-font-size-font-s16);
+            font-style: normal;
+            font-weight: var(--ztc-weight-regular);
+            line-height: 24px; 
+        }
+        .social-links {
+            li {
+                display: inline-block;
+                margin: 0 6px 0 0;
+                &:nth-last-child(1) {
+                    margin: 0;
+                }
+                a {
+                    height: 46px;
+                    width: 46px;
+                    text-align: center;
+                    line-height: 46px;
+                    border-radius: 50%;
+                    background: var(--ztc-bg-bg-4);
+                    display: inline-block;
+                    font-size: var(--ztc-font-size-font-s18);
+                    transition: all .4s;
+                    color: var(--ztc-text-text-2);
+                    border: 1px solid var(--ztc-text-text-2);
+                    &:hover  {
+                        background: var(--ztc-bg-bg-3);
+                        color: var(--ztc-text-text-1);
+                        transition: all .4s;
+                        border: 1px solid var(--ztc-text-text-4);
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-widget-area {
+        &.foot-padding1 {
+            padding-left: 70px;
+            @media #{$xs} {
+                padding: 0;
+            }
+
+            @media #{$md} {
+                padding: 0;
+            }
+                @media #{$lg} {
+                padding: 0;
+            }
+            ul {
+                li {
+                    padding-top: 24px;
+                    a {
+                        color: var(--ztc-text-text-3);
+                        font-family: var(--ztc-family-font1);
+                        font-size: var(--ztc-font-size-font-s16);
+                        font-style: normal;
+                        font-weight: var(--ztc-weight-regular);
+                        line-height: 16px; 
+                        display: inline-block;
+                        transition: all .4s;
+                        &:hover {
+                            color: var(--ztc-text-text-4);
+                            transition: all .4s;
+                            padding-left: 5px;
+                        }      
+                    }
+                }
+            }
+        }
+        &.foot-padding2 {
+            ul {
+                li {
+                    padding-top: 24px;
+                    a {
+                        color: var(--ztc-text-text-3);
+                        font-family: var(--ztc-family-font1);
+                        font-size: var(--ztc-font-size-font-s16);
+                        font-style: normal;
+                        font-weight: var(--ztc-weight-regular);
+                        line-height: 16px; 
+                        display: inline-block;
+                        transition: all .4s;
+                        &:hover {
+                            color: var(--ztc-text-text-4);
+                            transition: all .4s;
+                            padding-left: 5px;
+                        }      
+                    }
+                }
+            }
+        }
+        h3 {
+            color: var(--ztc-text-text-2);
+            font-family: var(--ztc-family-font1);
+            font-size: var(--ztc-font-size-font-s24);
+            font-style: normal;
+            font-weight: var(--ztc-weight-bold);
+            line-height: 24px;   
+            margin-bottom: 4px;  
+        }
+
+    }
+    .footer-widget-area{
+        ul {
+            li {
+                padding-top: 24px;
+                a {
+                    color: var(--ztc-text-text-3);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s16);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-regular);
+                    line-height: 18px; 
+                    display: inline-block;
+                    transition: all .4s;
+                    &:hover {
+                        color: var(--ztc-text-text-4);
+                        transition: all .4s;
+                    }  
+                    svg {
+                        margin: 0 5px 0 0;
+                    }    
+                }
+            }
+        }
+    }
+    .copyright-area {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-top: 1px solid var(--ztc-border-border-1);
+        padding-top: 24px;
+        @media #{$xs} {
+            display: block;
+            text-align: center;
+        }
+        @media #{$md} {
+            display: block;
+            text-align: center;
+        }
+        a {
+            color: var(--ztc-text-text-3);
+            font-family: var(--ztc-family-font1);
+            font-size: var(--ztc-font-size-font-s16);
+            font-style: normal;
+            font-weight: var(--ztc-weight-regular);
+            line-height: 16px; 
+            display: inline-block;
+            transition: all .4s;
+            @media #{$xs} {
+                line-height: 24px;
+            }
+        }
+        ul {
+            @media #{$md} {
+                padding-top: 20px;
+            }
+            @media #{$xs} {
+                padding-top: 20px;
+            }
+            li {
+                display: inline-block;
+                a {
+                    color: var(--ztc-text-text-3);
+                    font-family: var(--ztc-family-font1);
+                    font-size: var(--ztc-font-size-font-s16);
+                    font-style: normal;
+                    font-weight: var(--ztc-weight-regular);
+                    line-height: 16px; 
+                    display: inline-block;
+                    transition: all .4s;
+                }
+                span {
+                    display: inline-block;
+                    margin: 0 16px;
+                    color: var(--ztc-border-border-1);
+                }
+            }
+        }
+    }
+}
+/*============= FOOTER CSS AREA ===============*/

@@ -1,0 +1,230 @@
+@use '../utils/' as *;
+
+/*============= COMMON CSS AREA ===============*/
+// HEADING AREA //
+.heading1 {
+    h5 {
+        color: var(--ztc-text-text-4);
+        font-family: var(--ztc-family-font1);
+        font-size: var(--ztc-font-size-font-s16);
+        font-style: normal;
+        font-weight: var(--ztc-weight-regular);
+        line-height: 16px;
+        text-transform: uppercase;
+        span {
+            display: inline-block;
+            margin: 0 4px;
+        }
+        img {
+            margin: -4px 0 0 0;
+        }
+    }
+    h2 {
+        color: var(--ztc-text-text-2);
+        font-family: var(--ztc-family-font1);
+        font-size: var(--ztc-font-size-font-s44);
+        font-style: normal;
+        font-weight: var(--ztc-weight-bold);
+        line-height: 52px;
+        @media #{$xs} {
+            font-size: var(--ztc-font-size-font-s32);
+            line-height: 40px;
+        }
+    }
+    p {
+        color: var(--ztc-text-text-3);
+        font-family: var(--ztc-family-font1);
+        font-size: var(--ztc-font-size-font-s16);
+        font-style: normal;
+        font-weight: var(--ztc-weight-regular);
+        line-height: 24px;
+    }
+}
+
+.heading2 {
+    h5 {
+        color: var(--ztc-text-text-4);
+        font-family: var(--ztc-family-font1);
+        font-size: var(--ztc-font-size-font-s16);
+        font-style: normal;
+        font-weight: var(--ztc-weight-regular);
+        line-height: 16px;
+        text-transform: uppercase;
+        border-radius: 4px;
+        background: rgba(232, 4, 15, 0.04);
+        padding: 8px 12px;
+        display: inline-block;
+        span {
+            display: inline-block;
+            margin: 0 0 0 2px;
+        }
+        img {
+            margin: -4px 0 0 0;
+        }
+    }
+    h2 {
+        color: var(--ztc-text-text-2);
+        font-family: var(--ztc-family-font1);
+        font-size: var(--ztc-font-size-font-s44);
+        font-style: normal;
+        font-weight: var(--ztc-weight-bold);
+        line-height: 52px;
+        @media #{$xs} {
+            font-size: var(--ztc-font-size-font-s32);
+            line-height: 40px;
+        }
+    }
+    p {
+        color: var(--ztc-text-text-3);
+        font-family: var(--ztc-family-font1);
+        font-size: var(--ztc-font-size-font-s16);
+        font-style: normal;
+        font-weight: var(--ztc-weight-regular);
+        line-height: 24px;
+    }
+}
+
+.heading3 {
+    h5 {
+        color: var(--ztc-text-text-4);
+        font-family: var(--ztc-family-font1);
+        font-size: var(--ztc-font-size-font-s16);
+        font-style: normal;
+        font-weight: var(--ztc-weight-regular);
+        line-height: 16px;
+        text-transform: uppercase;
+        border-radius: 4px;
+        display: inline-block;
+        span {
+            display: inline-block;
+            margin: 0 0 0 2px;
+        }
+        img {
+            margin: -4px 0 0 0;
+        }
+    }
+    h2 {
+        color: var(--ztc-text-text-2);
+        font-family: var(--ztc-family-font1);
+        font-size: var(--ztc-font-size-font-s44);
+        font-style: normal;
+        font-weight: var(--ztc-weight-bold);
+        line-height: 52px;
+        @media #{$xs} {
+            font-size: var(--ztc-font-size-font-s32);
+            line-height: 40px;
+        }
+    }
+    p {
+        color: var(--ztc-text-text-3);
+        font-family: var(--ztc-family-font1);
+        font-size: var(--ztc-font-size-font-s16);
+        font-style: normal;
+        font-weight: var(--ztc-weight-regular);
+        line-height: 24px;
+    }
+}
+// Btn Area //
+.vl-btn1 {
+    color: var(--ztc-text-text-1);
+    font-family: var(--ztc-family-font1);
+    font-size: var(--ztc-font-size-font-s18);
+    font-style: normal;
+    font-weight: var(--ztc-weight-bold);
+    line-height: 18px; 
+    display: inline-block;
+    transition: all .6s;
+    background: var(--ztc-bg-bg-3);
+    padding: 18px 24px;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+    &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 0;
+        transition: all .6s;
+        right: 0;
+        top: 0;
+        transition: all .4s;
+        background: var(--ztc-bg-bg-2);
+        z-index: -1;
+        border-radius: 4px;
+    }
+    i {
+        margin-left: 4px;
+        transform: rotate(-45deg);
+        transition: all .4s;
+    }
+    &:hover {
+        transition: all .4s;
+        transform: translateY(-10px);
+        color: var(--ztc-text-text-1);
+        &::after {
+            width: 100%;
+            transition: all .6s;
+            left: 0;
+            right: inherit;
+        }
+        i {
+            transform: rotate(0);
+            transition: all .4s;
+        }
+    }
+}
+
+// Pagination Area //
+.pagination-area {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  overflow: hidden;
+  ul {
+      justify-content: center;
+      li {
+          margin: 0 14px 0 0;
+          &:last-child(1) {
+              margin: 0;
+          }
+          a {
+              color: var(--ztc-text-text-2);
+              text-align: center;
+              font-family: var(--ztc-family-font1);
+              font-size: var(--ztc-font-size-font-s20);
+              font-style: normal;
+              font-weight: var(--ztc-weight-bold);
+              display: inline-block;
+              transition: all .4s;
+              height: 50px;
+              width: 50px;
+              text-align: center;
+              line-height: 50px;
+              border: none;
+              border-radius: 8px;
+              margin: 0;
+              padding: 0;
+              border-radius: 8px;
+              background: var(--ztc-bg-bg-4);
+              &:hover {
+                  background: var(--ztc-bg-bg-3);
+                  color: var(--ztc-text-text-1);
+                  transition: all .4s;
+              }
+              &.active {
+                background: var(--ztc-bg-bg-3);
+                color: var(--ztc-text-text-1);
+                transition: all .4s;
+              }
+          }
+      }
+  }
+}
+
+.common-bg {
+    background: var(--ztc-bg-bg-4);
+}
+.white-bg {
+    background: var(--ztc-bg-bg-1);
+}
+/*============= COMMON CSS AREA ENDS===============*/
