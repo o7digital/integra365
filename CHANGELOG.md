@@ -95,7 +95,70 @@
 8. Cambiar esquema de colores a naranja (#FF6B35)
 9. Cambiar esquema de colores a azul (#1E90FF)
 10. Ajustar color azul a tono más oscuro (#1873CC)
+11. Agregar documentación completa de cambios (CHANGELOG.md)
+12. Actualizar imágenes sección Sobre Nosotros (gem1.png)
+13. Actualizar imágenes sección Servicios (gem2, gem3, gem4)
+14. Alinear títulos de servicios con padding-top
+15. Actualizar imágenes sección Por Qué Elegir (gem5, gem6)
+16. Actualizar imagen sección CTA (gem7.png)
+17. Simplificar menú: logo texto, solo Inicio/Nosotros/Servicios/Contacto
+18. Ocultar sección Blog, actualizar footer
+19. Traducir testimonios con nombres mexicanos
+20. Ocultar sección Equipo, actualizar menú mobile
 ```
+
+## Cambios Recientes (Sesión Actual)
+
+### Imágenes Personalizadas
+- **Sección "Sobre Nuestro INTEGRA 365"**: `gem1.png`
+- **Sección "Servicios Energéticos"**: 
+  - Servicio 1: `gem2.png` (Servicios de Optimización de Red)
+  - Servicio 2: `gem3.png` (Gestión Inteligente de Energía)
+  - Servicio 3: `gem4.png` (Soluciones de Energía Industrial)
+- **Sección "Por Qué Elegir INTEGRA 365"**: 
+  - Imagen 1: `gem5.png`
+  - Imagen 2: `gem6.png`
+- **Sección CTA**: `gem7.png`
+
+Todas las imágenes ubicadas en `/assets/`
+
+### Mejoras de Diseño
+- **Alineación de servicios**: Agregado `padding-top: 40px` a títulos de servicios para mejor espaciado visual
+- **CSS modificado**: `assets/scss/components/_service.scss` y `assets/css/main.css`
+
+### Simplificación del Menú
+- **Header Desktop**:
+  - Logo: Texto "INTEGRA 365" (blanco sobre negro)
+  - Menú reducido: Inicio, Nosotros, Servicios, Contacto
+  - Eliminados: Páginas, Proyectos, Blog
+  - Mega-menu dropdown eliminado
+
+- **Header Mobile (Offcanvas)**:
+  - Logo: Texto "INTEGRA 365" (blanco sobre azul #1873CC)
+  - Menú sincronizado con desktop
+  - Información de contacto actualizada
+
+### Footer Actualizado
+- **Logo**: Texto "INTEGRA 365" (negro sobre blanco)
+- **Enlaces Rápidos**: "Blog" reemplazado por "Aviso de Privacidad"
+- **Dirección actualizada**: Prolongación Paseo de la Reforma 1015, Col. Santa Fe, Álvaro Obregón, Ciudad de México 01376 Piso 1
+- **Email**: info@integra365.com
+
+### Testimonios en Español
+Traducción completa con nombres y empresas mexicanas:
+
+1. **Carlos Mendoza** - Director General, Industrias del Valle
+   - Testimonio sobre reducción de costos y confiabilidad
+
+2. **Sofía Rodríguez** - Arquitecta, Estudio Luminar
+   - Testimonio sobre soluciones inteligentes para el hogar
+
+3. **Javier Hernández** - Gerente de Operaciones, TechNova México
+   - Testimonio sobre ahorro energético empresarial
+
+### Secciones Ocultadas (display: none)
+- **Blog y Noticias**: Oculta temporalmente para reactivar después
+- **Miembros del Equipo**: Oculta temporalmente
 
 ## Estado Actual del Proyecto
 
