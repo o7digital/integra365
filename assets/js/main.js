@@ -47,11 +47,13 @@ $(document).ready(function(){
     $(this).html(desktopMenuHTML);
   });
 
-  // Build mobile offcanvas menu: only 3 items (no Contacto)
+  // Build mobile offcanvas menu: flat links; add Sistemas after Servicios
   var mobileMenuHTML = '<ul>'+
                        '<li><a href="index.html">Inicio</a></li>'+
                        '<li><a href="index.html#about">Nosotros</a></li>'+
                        '<li><a href="service.html">Servicios</a></li>'+
+                       '<li><a href="sistemas.html">Sistemas e Infraestructura</a></li>'+
+                       '<li><a href="contact.html">Contacto</a></li>'+
                        '</ul>';
   var vlSideMenu = $('.vl-offcanvas-menu nav');
   vlSideMenu.empty().html(mobileMenuHTML);
