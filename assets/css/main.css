@@ -1152,6 +1152,7 @@ img {
   line-height: 30px;
   display: inline-block;
   transition: all 0.4s;
+  padding-top: 40px;
 }
 .service2 .service-widget-boxarea .s-content-area .title:hover {
   color: var(--ztc-text-text-4);
