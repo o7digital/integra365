@@ -30,29 +30,28 @@ $(document).ready(function(){
       .attr('style','background-color: #1873CC; color: #fff; padding: 10px 20px; font-weight: bold; font-size: 20px; text-decoration: none; display: inline-block; border-radius: 4px;');
   });
 
-  // Replace desktop menu with simplified items
-  var simpleMenuHTML = '<ul>'+
+  // Replace desktop menu with simplified items (desktop keeps Contacto)
+  var desktopMenuHTML = '<ul>'+
+                        '<li><a href="index.html">Inicio</a></li>'+
+                        '<li><a href="index.html#about">Nosotros</a></li>'+
+                        '<li><a href="service.html">Servicios</a></li>'+
+                        '<li><a href="contact.html">Contacto</a></li>'+
+                        '</ul>';
+  $('.vl-mobile-menu-active').each(function(){
+    $(this).html(desktopMenuHTML);
+  });
+
+  // Build mobile offcanvas menu: only 3 items (no Contacto)
+  var mobileMenuHTML = '<ul>'+
                        '<li><a href="index.html">Inicio</a></li>'+
                        '<li><a href="index.html#about">Nosotros</a></li>'+
                        '<li><a href="service.html">Servicios</a></li>'+
                        '</ul>';
-  $('.vl-mobile-menu-active').each(function(){
-    $(this).html(simpleMenuHTML);
-  });
-
-  // Build mobile offcanvas menu by cloning simplified desktop menu
-  var vlMenuWrap = $('.vl-mobile-menu-active > ul').clone();
   var vlSideMenu = $('.vl-offcanvas-menu nav');
-  // Force a single UL inside offcanvas nav
-  vlSideMenu.empty();
-  vlSideMenu.append(vlMenuWrap);
-  // Remove any extra UL accidentally injected by other scripts
-  vlSideMenu.find('ul:not(:first)').remove();
-  // As a safeguard, re-enforce after a short delay
+  vlSideMenu.empty().html(mobileMenuHTML);
+  // As a safeguard, ensure only one UL exists
   setTimeout(function(){
-    var wrap2 = $('.vl-mobile-menu-active > ul').first().clone();
-    vlSideMenu.empty().append(wrap2);
-    vlSideMenu.find('ul:not(:first)').remove();
+    vlSideMenu.html(mobileMenuHTML);
   }, 50);
   
   if ($(vlSideMenu).find('.sub-menu, .vl-mega-menu').length !== 0) {
