@@ -73,7 +73,7 @@
                 <div class="vl-hero-btn d-none d-xl-block text-end">
                   <div class="sidebar_btn-area">
                     <div class="btn_area1">
-                      <a href="contact.html" class="vl-btn1">Obtener Cotización <i class="fa-solid fa-arrow-right"></i></a>
+                      <button id="open-quote-modal" class="vl-btn1" type="button">Obtener Cotización <i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                     <div class="search-icon header__search header-search-btn">
                       <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
@@ -96,8 +96,60 @@
   </div>
 </header>
  <!--=====HEADER END =======-->
+<!-- MODAL DE COTIZACIÓN -->
+<div id="quote-modal" style="display:none;position:fixed;z-index:9999;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.55);align-items:center;justify-content:center;">
+  <div style="background:#fff;padding:2rem 1.5rem;max-width:400px;width:90vw;border-radius:10px;box-shadow:0 2px 16px rgba(0,0,0,0.18);position:relative;">
+    <button id="close-quote-modal" style="position:absolute;top:10px;right:10px;background:none;border:none;font-size:1.5rem;cursor:pointer;">&times;</button>
+    <h2 style="color:#1873CC;font-size:1.5rem;margin-bottom:1rem;">Solicita tu Cotización</h2>
+    <form id="quote-form">
+      <div style="margin-bottom:1rem;">
+        <label for="q-nombre" style="display:block;font-weight:600;">Nombre</label>
+        <input type="text" id="q-nombre" name="nombre" required style="width:100%;padding:8px;border:1px solid #ccc;border-radius:4px;">
+      </div>
+      <div style="margin-bottom:1rem;">
+        <label for="q-email" style="display:block;font-weight:600;">Correo electrónico</label>
+        <input type="email" id="q-email" name="email" required style="width:100%;padding:8px;border:1px solid #ccc;border-radius:4px;">
+      </div>
+      <div style="margin-bottom:1rem;">
+        <label for="q-tel" style="display:block;font-weight:600;">Teléfono</label>
+        <input type="tel" id="q-tel" name="telefono" style="width:100%;padding:8px;border:1px solid #ccc;border-radius:4px;">
+      </div>
+      <div style="margin-bottom:1rem;">
+        <label for="q-mensaje" style="display:block;font-weight:600;">Mensaje</label>
+        <textarea id="q-mensaje" name="mensaje" rows="3" required style="width:100%;padding:8px;border:1px solid #ccc;border-radius:4px;"></textarea>
+      </div>
+      <button type="submit" style="background:#1873CC;color:#fff;padding:10px 24px;border:none;border-radius:4px;font-weight:600;cursor:pointer;width:100%;">Enviar Solicitud</button>
+      <div id="quote-form-success" style="display:none;color:green;margin-top:1rem;text-align:center;">¡Solicitud enviada correctamente!</div>
+    </form>
+  </div>
+</div>
 
 <!--===== MOBILE HEADER STARTS =======-->
+<script>
+// Modal cotización
+document.addEventListener('DOMContentLoaded', function() {
+  var openBtn = document.getElementById('open-quote-modal');
+  var modal = document.getElementById('quote-modal');
+  var closeBtn = document.getElementById('close-quote-modal');
+  if(openBtn && modal && closeBtn) {
+    openBtn.onclick = function() { modal.style.display = 'flex'; };
+    closeBtn.onclick = function() { modal.style.display = 'none'; };
+    window.onclick = function(e) { if(e.target === modal) modal.style.display = 'none'; };
+  }
+  var form = document.getElementById('quote-form');
+  if(form) {
+    form.onsubmit = function(e) {
+      e.preventDefault();
+      document.getElementById('quote-form-success').style.display = 'block';
+      setTimeout(function(){
+        modal.style.display = 'none';
+        form.reset();
+        document.getElementById('quote-form-success').style.display = 'none';
+      }, 2000);
+    };
+  }
+});
+</script>
 <div class="homepage1-body">
   <div class="vl-offcanvas">
     <div class="vl-offcanvas-wrapper">
