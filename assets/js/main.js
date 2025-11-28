@@ -30,37 +30,68 @@ $(document).ready(function(){
       .attr('style','background-color: #1873CC; color: #fff; padding: 10px 20px; font-weight: bold; font-size: 20px; text-decoration: none; display: inline-block; border-radius: 4px;');
   });
 
-  // Replace desktop menu with simplified items (desktop keeps Contacto)
-  var desktopMenuHTML = '<ul>'+
-                        '<li><a href="index.html">Inicio</a></li>'+
-                        '<li><a href="index.html#about">Nosotros</a></li>'+
-                        '<li class="has-dropdown">'+
-                          '<a href="#">Servicios <span><i class="fa-solid fa-angle-down d-xl-inline d-none"></i></span></a>'+
-                          '<ul class="sub-menu">'+
-                            '<li><a href="service.html">Servicios Eléctricos</a></li>'+
-                            '<li><a href="sistemas.html">Sistemas e Infraestructura</a></li>'+
-                          '</ul>'+
-                        '</li>'+
-                        '<li><a href="contact.html">Contacto</a></li>'+
-                        '</ul>';
+  // Replace desktop/mobile menus with the right language (defaults to ES)
+  var lang = (document.documentElement.lang || 'es').toLowerCase();
+  lang = lang.indexOf('en') === 0 ? 'en' : 'es';
+
+  var menuByLang = {
+    es: {
+      desktop: '<ul>'+
+                '<li><a href="index.html">Inicio</a></li>'+
+                '<li><a href="index.html#about">Nosotros</a></li>'+
+                '<li class="has-dropdown">'+
+                  '<a href="#">Servicios <span><i class="fa-solid fa-angle-down d-xl-inline d-none"></i></span></a>'+
+                  '<ul class="sub-menu">'+
+                    '<li><a href="service.html">Servicios Eléctricos</a></li>'+
+                    '<li><a href="sistemas.html">Sistemas e Infraestructura</a></li>'+
+                  '</ul>'+
+                '</li>'+
+                '<li><a href="contact.html">Contacto</a></li>'+
+                '</ul>',
+      mobile:  '<ul>'+
+                '<li><a href="index.html">Inicio</a></li>'+
+                '<li><a href="index.html#about">Nosotros</a></li>'+
+                '<li><a href="service.html">Servicios</a></li>'+
+                '<li><a href="sistemas.html">Sistemas e Infraestructura</a></li>'+
+                '<li><a href="contact.html">Contacto</a></li>'+
+                '</ul>'
+    },
+    en: {
+      desktop: '<ul>'+
+                '<li><a href="index-en.html">Home</a></li>'+
+                '<li><a href="index-en.html#about">About Us</a></li>'+
+                '<li class="has-dropdown">'+
+                  '<a href="#">Services <span><i class="fa-solid fa-angle-down d-xl-inline d-none"></i></span></a>'+
+                  '<ul class="sub-menu">'+
+                    '<li><a href="service-en.html">Electrical Services</a></li>'+
+                    '<li><a href="sistemas-en.html">Systems & Infrastructure</a></li>'+
+                  '</ul>'+
+                '</li>'+
+                '<li><a href="contact-en.html">Contact</a></li>'+
+                '</ul>',
+      mobile:  '<ul>'+
+                '<li><a href="index-en.html">Home</a></li>'+
+                '<li><a href="index-en.html#about">About Us</a></li>'+
+                '<li><a href="service-en.html">Services</a></li>'+
+                '<li><a href="sistemas-en.html">Systems & Infrastructure</a></li>'+
+                '<li><a href="contact-en.html">Contact</a></li>'+
+                '</ul>'
+    }
+  };
+  var activeMenu = menuByLang[lang] || menuByLang.es;
+
   $('.vl-mobile-menu-active').each(function(){
-    $(this).html(desktopMenuHTML);
+    $(this).html(activeMenu.desktop);
   });
 
-  // Build mobile offcanvas menu: flat links; add Sistemas after Servicios
-  var mobileMenuHTML = '<ul>'+
-                       '<li><a href="index.html">Inicio</a></li>'+
-                       '<li><a href="index.html#about">Nosotros</a></li>'+
-                       '<li><a href="service.html">Servicios</a></li>'+
-                       '<li><a href="sistemas.html">Sistemas e Infraestructura</a></li>'+
-                       '<li><a href="contact.html">Contacto</a></li>'+
-                       '</ul>';
   var vlSideMenu = $('.vl-offcanvas-menu nav');
-  vlSideMenu.empty().html(mobileMenuHTML);
-  // As a safeguard, ensure only one UL exists
-  setTimeout(function(){
-    vlSideMenu.html(mobileMenuHTML);
-  }, 50);
+  if (vlSideMenu.length) {
+    vlSideMenu.empty().html(activeMenu.mobile);
+    // As a safeguard, ensure only one UL exists
+    setTimeout(function(){
+      vlSideMenu.html(activeMenu.mobile);
+    }, 50);
+  }
   
   if ($(vlSideMenu).find('.sub-menu, .vl-mega-menu').length !== 0) {
     $(vlSideMenu).find('.sub-menu, .vl-mega-menu').parent().append('<button class="vl-menu-close"><i class="fas fa-chevron-right"></i></button>');
