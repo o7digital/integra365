@@ -103,7 +103,7 @@ $(document).ready(function(){
     }
     // spanish
     if (currentFile.indexOf('-es.html') !== -1) return currentFile;
-    if (currentFile.indexOf('-en.html') !== -1) return currentFile.replace('-en.html','-es.html');
+    if (currentFile.indexOf('-en.html') !== -1) return currentFile.replace('-en.html','.html');
     return currentFile;
   }
   var esHref = buildLangPath('es');
