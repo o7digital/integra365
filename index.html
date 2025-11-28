@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>INTEGRA 365 - Plantilla de Energía y Electricidad</title>
+     <title>INTEGRA 365 - Energy and Electricity Template</title>
 
      <!--=====FAB ICON=======-->
     <link rel="shortcut icon" href="assets/img/logo/fav-logo1.png" type="image/x-icon">
@@ -64,16 +64,16 @@
                   <div class="vl-main-menu text-center">
                       <nav class="vl-mobile-menu-active">
                           <ul>
-                              <li><a href="index.html">Inicio</a></li>
-                              <li><a href="index.html#about">Nosotros</a></li>
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="index.html#about">About Us</a></li>
                               <li class="has-dropdown">
-                                <a href="#">Servicios <span><i class="fa-solid fa-angle-down d-xl-inline d-none"></i></span></a>
+                                <a href="#">Services <span><i class="fa-solid fa-angle-down d-xl-inline d-none"></i></span></a>
                                 <ul class="sub-menu">
-                                    <li><a href="service.html">Servicios Eléctricos</a></li>
-                                    <li><a href="sistemas.html">Sistemas e Infraestructura</a></li>
+                                    <li><a href="service.html">Electrical Services</a></li>
+                                    <li><a href="sistemas.html">Systems & Infrastructure</a></li>
                                 </ul>
                               </li>
-                              <li><a href="contact.html">Contacto</a></li>
+                              <li><a href="contact.html">Contact</a></li>
                           </ul>
                       </nav>
                   </div>
@@ -82,7 +82,7 @@
                 <div class="vl-hero-btn d-none d-xl-block text-end">
                   <div class="sidebar_btn-area">
                     <div class="btn_area1">
-                      <button id="open-quote-modal" class="vl-btn1" type="button">Obtener Cotización <i class="fa-solid fa-arrow-right"></i></button>
+                      <button id="open-quote-modal" class="vl-btn1" type="button">Get Quote <i class="fa-solid fa-arrow-right"></i></button>
                     </div>
                     <div class="search-icon header__search header-search-btn">
                       <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26" fill="none">
@@ -109,26 +109,26 @@
 <div id="quote-modal" style="display:none;position:fixed;z-index:9999;top:0;left:0;width:100vw;height:100vh;background:rgba(0,0,0,0.55);align-items:center;justify-content:center;">
   <div style="background:#fff;padding:2rem 1.5rem;max-width:400px;width:90vw;border-radius:10px;box-shadow:0 2px 16px rgba(0,0,0,0.18);position:relative;">
     <button id="close-quote-modal" style="position:absolute;top:10px;right:10px;background:none;border:none;font-size:1.5rem;cursor:pointer;">&times;</button>
-    <h2 style="color:#1873CC;font-size:1.5rem;margin-bottom:1rem;">Solicita tu Cotización</h2>
+    <h2 style="color:#1873CC;font-size:1.5rem;margin-bottom:1rem;">Request Your Quote</h2>
     <form id="quote-form">
       <div style="margin-bottom:1rem;">
-        <label for="q-nombre" style="display:block;font-weight:600;">Nombre</label>
+        <label for="q-nombre" style="display:block;font-weight:600;">Name</label>
         <input type="text" id="q-nombre" name="nombre" required style="width:100%;padding:8px;border:1px solid #ccc;border-radius:4px;">
       </div>
       <div style="margin-bottom:1rem;">
-        <label for="q-email" style="display:block;font-weight:600;">Correo electrónico</label>
+        <label for="q-email" style="display:block;font-weight:600;">Email Address</label>
         <input type="email" id="q-email" name="email" required style="width:100%;padding:8px;border:1px solid #ccc;border-radius:4px;">
       </div>
       <div style="margin-bottom:1rem;">
-        <label for="q-tel" style="display:block;font-weight:600;">Teléfono</label>
+        <label for="q-tel" style="display:block;font-weight:600;">Phone</label>
         <input type="tel" id="q-tel" name="telefono" style="width:100%;padding:8px;border:1px solid #ccc;border-radius:4px;">
       </div>
       <div style="margin-bottom:1rem;">
-        <label for="q-mensaje" style="display:block;font-weight:600;">Mensaje</label>
+        <label for="q-mensaje" style="display:block;font-weight:600;">Message</label>
         <textarea id="q-mensaje" name="mensaje" rows="3" required style="width:100%;padding:8px;border:1px solid #ccc;border-radius:4px;"></textarea>
       </div>
-      <button type="submit" style="background:#1873CC;color:#fff;padding:10px 24px;border:none;border-radius:4px;font-weight:600;cursor:pointer;width:100%;">Enviar Solicitud</button>
-      <div id="quote-form-success" style="display:none;color:green;margin-top:1rem;text-align:center;">¡Solicitud enviada correctamente!</div>
+      <button type="submit" style="background:#1873CC;color:#fff;padding:10px 24px;border:none;border-radius:4px;font-weight:600;cursor:pointer;width:100%;">Send Request</button>
+      <div id="quote-form-success" style="display:none;color:green;margin-top:1rem;text-align:center;">Request sent successfully!</div>
     </form>
   </div>
 </div>
@@ -178,15 +178,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
         <div class="space20"></div>
         <div class="vl-offcanvas-info">
-            <h3 class="vl-offcanvas-sm-title">Contáctenos</h3>
+            <h3 class="vl-offcanvas-sm-title">Contact Us</h3>
             <div class="space20"></div>
             <span><a href="tel:+5215512345678"> <i class="fa-regular fa-envelope"></i> +52 155 1234 5678</a></span>
             <span><a href="mailto:info@integra365.com"><i class="fa-solid fa-phone"></i> info@integra365.com</a></span>
-            <span><a href="#"><i class="fa-solid fa-location-dot"></i> Prolongación Paseo de la Reforma 1015 Piso 1, Col. Santa Fe, Álvaro Obregón, CDMX 01376</a></span>
+            <span><a href="#"><i class="fa-solid fa-location-dot"></i> Prolongación Paseo de la Reforma 1015 Floor 1, Col. Santa Fe, Álvaro Obregón, CDMX 01376</a></span>
         </div>
         <div class="space20"></div>
         <div class="vl-offcanvas-social">
-            <h3 class="vl-offcanvas-sm-title">Síguenos</h3>
+            <h3 class="vl-offcanvas-sm-title">Follow Us</h3>
             <div class="space20"></div>
             <a href="#"><i class="fab fa-facebook-f"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>
@@ -209,13 +209,13 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="row align-items-center">
         <div class="col-xl-7">
           <div class="hero1-heading">
-            <h1>Tu Fuente Confiable para Energía de Nueva Generación</h1>
+            <h1>Your Trusted Source for Next-Generation Energy</h1>
             <div class="space16"></div>
-            <p>Traemos el futuro de la energía a tu puerta con soluciones de energía de vanguardia, eficientes y ecológicas. Ya sea que busques sistemas eléctricos inteligentes, energía renovable o energía de respaldo que nunca te falle.</p>
+            <p>We bring the future of energy to your doorstep with cutting-edge, efficient, and eco-friendly power solutions. Whether you're looking for smart electrical systems, renewable energy, or backup power that never fails.</p>
             <div class="space38"></div>
             <div class="play-btns-area">
                 <div class="btn-area1">
-                 <a href="service.html" class="vl-btn1">Explorar Nuestros Servicios <i class="fa-solid fa-arrow-right"></i></a>
+                 <a href="service.html" class="vl-btn1">Explore Our Services <i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -230,13 +230,13 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="row align-items-center">
         <div class="col-xl-7">
           <div class="hero1-heading">
-            <h1>Tu Fuente Confiable para Energía de Nueva Generación</h1>
+            <h1>Your Trusted Source for Next-Generation Energy</h1>
             <div class="space16"></div>
-            <p>Traemos el futuro de la energía a tu puerta con soluciones de energía de vanguardia, eficientes y ecológicas. Ya sea que busques sistemas eléctricos inteligentes, energía renovable o energía de respaldo que nunca te falle.</p>
+            <p>We bring the future of energy to your doorstep with cutting-edge, efficient, and eco-friendly power solutions. Whether you're looking for smart electrical systems, renewable energy, or backup power that never fails.</p>
             <div class="space38"></div>
             <div class="play-btns-area">
                 <div class="btn-area1">
-                 <a href="service.html" class="vl-btn1">Explorar Nuestros Servicios <i class="fa-solid fa-arrow-right"></i></a>
+                 <a href="service.html" class="vl-btn1">Explore Our Services <i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -251,13 +251,13 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="row align-items-center">
         <div class="col-xl-7">
           <div class="hero1-heading">
-            <h1>Tu Fuente Confiable para Energía de Nueva Generación</h1>
+            <h1>Your Trusted Source for Next-Generation Energy</h1>
             <div class="space16"></div>
-            <p>Traemos el futuro de la energía a tu puerta con soluciones de energía de vanguardia, eficientes y ecológicas. Ya sea que busques sistemas eléctricos inteligentes, energía renovable o energía de respaldo que nunca te falle.</p>
+            <p>We bring the future of energy to your doorstep with cutting-edge, efficient, and eco-friendly power solutions. Whether you're looking for smart electrical systems, renewable energy, or backup power that never fails.</p>
             <div class="space38"></div>
             <div class="play-btns-area">
                 <div class="btn-area1">
-                 <a href="service.html" class="vl-btn1">Explorar Nuestros Servicios <i class="fa-solid fa-arrow-right"></i></a>
+                 <a href="service.html" class="vl-btn1">Explore Our Services <i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -272,13 +272,13 @@ document.addEventListener('DOMContentLoaded', function() {
       <div class="row align-items-center">
         <div class="col-xl-7">
           <div class="hero1-heading">
-            <h1>Tu Fuente Confiable para Energía de Nueva Generación</h1>
+            <h1>Your Trusted Source for Next-Generation Energy</h1>
             <div class="space16"></div>
-            <p>Traemos el futuro de la energía a tu puerta con soluciones de energía de vanguardia, eficientes y ecológicas. Ya sea que busques sistemas eléctricos inteligentes, energía renovable o energía de respaldo que nunca te falle.</p>
+            <p>We bring the future of energy to your doorstep with cutting-edge, efficient, and eco-friendly power solutions. Whether you're looking for smart electrical systems, renewable energy, or backup power that never fails.</p>
             <div class="space38"></div>
             <div class="play-btns-area">
                 <div class="btn-area1">
-                 <a href="service.html" class="vl-btn1">Explorar Nuestros Servicios <i class="fa-solid fa-arrow-right"></i></a>
+                 <a href="service.html" class="vl-btn1">Explore Our Services <i class="fa-solid fa-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -299,7 +299,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="icons">
             <img src="assets/img/icons/ot-icons1.svg" alt="">
           </div>
-          <a href="service-single.html" class="title">Suministrando Energía a Más de 10,000+ Hogares y Empresas</a>
+          <a href="service-single.html" class="title">Powering Over 10,000+ Homes and Businesses</a>
         </div>
       </div>
 
@@ -308,7 +308,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="icons">
             <img src="assets/img/icons/ot-icons2.svg" alt="">
           </div>
-          <a href="service-single.html" class="title">100% Soluciones de Energía Renovable y Sostenible</a>
+          <a href="service-single.html" class="title">100% Renewable and Sustainable Energy Solutions</a>
         </div>
       </div>
 
@@ -317,7 +317,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="icons">
             <img src="assets/img/icons/ot-icons3.svg" alt="">
           </div>
-          <a href="service-single.html" class="title">Ahorro de Energía de Hasta el 60% con Soluciones Inteligentes</a>
+          <a href="service-single.html" class="title">Save Up to 60% on Energy with Smart Solutions</a>
         </div>
       </div>
 
@@ -326,7 +326,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="icons">
             <img src="assets/img/icons/ot-icons4.svg" alt="">
           </div>
-          <a href="service-single.html" class="title">Soluciones de Energía Renovable con Más de 25 Años de Vida Útil</a>
+          <a href="service-single.html" class="title">Renewable Energy Solutions with 25+ Year Lifespan</a>
         </div>
       </div>
     </div>
@@ -354,11 +354,11 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             <div class="col-xl-6">
                 <div class="about2-heading heading1">
-                  <h5 class="vl-section-subtitle" data-aos="fade-left" data-aos-duration="900"><img src="assets/img/elements/elements5.png" alt=""> <span>Sobre Nuestro INTEGRA 365</span> <img src="assets/img/elements/elements6.png" alt=""></h5>
+                  <h5 class="vl-section-subtitle" data-aos="fade-left" data-aos-duration="900"><img src="assets/img/elements/elements5.png" alt=""> <span>About Our INTEGRA 365</span> <img src="assets/img/elements/elements6.png" alt=""></h5>
                   <div class="space16"></div>
-                  <h2 class="vl-section-title" data-aos="fade-left" data-aos-duration="1000">Soluciones Energéticas Inteligentes para un Mundo Sostenible</h2>
+                  <h2 class="vl-section-title" data-aos="fade-left" data-aos-duration="1000">Smart Energy Solutions for a Sustainable World</h2>
                   <div class="space16"></div>
-                  <p data-aos="fade-left" data-aos-duration="1000">En INTEGRA 365, creemos que la energía debe ser inteligente, sostenible y siempre confiable. Como líder en soluciones energéticas de nueva generación, proporcionamos servicios de electricidad de vanguardia diseñados para satisfacer las necesidades de hogares y empresas.</p>
+                  <p data-aos="fade-left" data-aos-duration="1000">At INTEGRA 365, we believe that energy should be intelligent, sustainable, and always reliable. As a leader in next-generation energy solutions, we provide cutting-edge electricity services designed to meet the needs of homes and businesses.</p>
                     <div class="row">
                         <div class="col-xl-6 col-md-6">
                         <div class="space24"></div>
@@ -381,16 +381,16 @@ document.addEventListener('DOMContentLoaded', function() {
                         <img src="assets/img/icons/ch-icons2.svg" alt="">
                         </div>
                         <div class="content-area">
-                        <a href="about.html">Soluciones Poderosas</a>
+                        <a href="about.html">Powerful Solutions</a>
                         <div class="space16"></div>
-                        <p>Creemos en energía inteligente y sostenible que</p>
+                        <p>We believe in smart and sustainable energy that</p>
                         </div>
                     </div>
                   </div>
                     </div>
                     <div class="space24"></div>
                     <div class="btn-area1" data-aos="fade-left" data-aos-duration="1200">
-                        <a href="about.html" class="vl-btn1">Saber Más<i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="about.html" class="vl-btn1">Learn More<i class="fa-solid fa-arrow-right"></i></a>
                         <div class="call-boxarea" data-aos="fade-left" data-aos-duration="1100">
                         <div class="icons">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -398,7 +398,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         </svg>
                         </div>
                         <div class="content-area">
-                        <p>LLÁMANOS</p>
+                        <p>CALL US</p>
                         <div class="space6"></div>
                         <a href="tel:123-456-7890">123-456-7890</a>
                         </div>
@@ -419,9 +419,9 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="row">
             <div class="col-xl-7 m-auto">
                 <div class="heading1 text-center space-margin60">
-                  <h5 class="vl-section-subtitle" data-aos="zoom-in-up" data-aos-duration="900"><img src="assets/img/elements/elements5.png" alt=""> <span>Nuestros servicios</span> <img src="assets/img/elements/elements6.png" alt=""></h5>
+                  <h5 class="vl-section-subtitle" data-aos="zoom-in-up" data-aos-duration="900"><img src="assets/img/elements/elements5.png" alt=""> <span>Our Services</span> <img src="assets/img/elements/elements6.png" alt=""></h5>
                   <div class="space16"></div>
-                  <h2 class="vl-section-title" data-aos="zoom-in-up" data-aos-duration="1000">Servicios Energéticos Adaptados para Ti</h2>
+                  <h2 class="vl-section-title" data-aos="zoom-in-up" data-aos-duration="1000">Energy Services Tailored for You</h2>
                 </div>
             </div>
         </div>
@@ -436,11 +436,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="icons">
                             <img src="assets/img/icons/s2-icons1.svg" alt="">
                         </div>
-                        <a href="service-single.html" class="title">Servicios de Optimización de Red</a>
+                        <a href="service-single.html" class="title">Network Optimization Services</a>
                         <div class="space16"></div>
-                        <p>Combina energía solar, eólica y almacenamiento en baterías para un suministro de energía confiable y sin interrupciones. Nuestros sistemas híbridos maximizan la eficiencia.</p>
+                        <p>Combines solar, wind energy and battery storage for reliable, uninterrupted power supply. Our hybrid systems maximize efficiency.</p>
                         <div class="space24"></div>
-                        <a href="service-single.html" class="readmore">Saber Más <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="service-single.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -454,11 +454,11 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="icons">
                             <img src="assets/img/icons/s2-icons2.svg" alt="">
                         </div>
-                        <a href="service-single.html" class="title">Gestión Inteligente de Energía</a>
+                        <a href="service-single.html" class="title">Smart Energy Management</a>
                         <div class="space16"></div>
-                        <p>Actualiza a una red eléctrica inteligente, estable y eficiente. Nuestras soluciones de red mejoran la confiabilidad, previenen sobrecargas y aseguran.</p>
+                        <p>Upgrade to a smart, stable and efficient power grid. Our network solutions improve reliability, prevent overloads and ensure.</p>
                         <div class="space24"></div>
-                        <a href="service-single.html" class="readmore">Saber Más <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="service-single.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -472,18 +472,18 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="icons">
                             <img src="assets/img/icons/s2-icons3.svg" alt="">
                         </div>
-                        <a href="service-single.html" class="title">Soluciones de Energía Industrial</a>
+                        <a href="service-single.html" class="title">Industrial Energy Solutions</a>
                         <div class="space16"></div>
-                        <p>Soluciones energéticas personalizadas para fábricas, almacenes e industrias pesadas. Diseñamos e implementamos energía escalable.</p>
+                        <p>Customized energy solutions for factories, warehouses and heavy industries. We design and implement scalable power.</p>
                         <div class="space24"></div>
-                        <a href="service-single.html" class="readmore">Saber Más <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="service-single.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
             <div class="col-xl-12">
                 <div class="space18"></div>
                 <div class="btn-area1 text-center">
-                    <a href="service.html" class="vl-btn1">Ver Todos los Servicios <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="service.html" class="vl-btn1">View All Services <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -497,20 +497,20 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="row">
             <div class="col-xl-6">
                 <div class="choose-heading heading1">
-                    <h5 class="vl-section-subtitle" data-aos="fade-left" data-aos-duration="900"><img src="assets/img/elements/elements5.png" alt=""> <span>POR QUÉ ELEGIR INTEGRA 365</span> <img src="assets/img/elements/elements6.png" alt=""></h5>
+                    <h5 class="vl-section-subtitle" data-aos="fade-left" data-aos-duration="900"><img src="assets/img/elements/elements5.png" alt=""> <span>WHY CHOOSE INTEGRA 365</span> <img src="assets/img/elements/elements6.png" alt=""></h5>
                   <div class="space16"></div>
-                  <h2 class="vl-section-title" data-aos="fade-left" data-aos-duration="1000">Impulsando el Futuro con Innovación y Confiabilidad</h2>
+                  <h2 class="vl-section-title" data-aos="fade-left" data-aos-duration="1000">Powering the Future with Innovation and Reliability</h2>
                   <div class="space16"></div>
-                  <p data-aos="fade-left" data-aos-duration="1000">En INTEGRA 365, creemos en ofrecer soluciones energéticas inteligentes, confiables y sostenibles que alimentan hogares, empresas e industrias de manera eficiente. Nuestra tecnología de vanguardia, opciones de energía renovable y sistemas de energía avanzados</p>
+                  <p data-aos="fade-left" data-aos-duration="1000">At INTEGRA 365, we believe in delivering smart, reliable, and sustainable energy solutions that power homes, businesses, and industries efficiently. Our cutting-edge technology, renewable energy options, and advanced power systems</p>
                   <div class="space24"></div>
                   <div class="choose-boxarea" data-aos="fade-left" data-aos-duration="1100">
                         <div class="icons">
                         <img src="assets/img/icons/ch-icons1.svg" alt="">
                         </div>
                         <div class="content-area">
-                        <a href="about.html">Revolucionando la Energía con Soluciones Inteligentes</a>
+                        <a href="about.html">Revolutionizing Energy with Smart Solutions</a>
                         <div class="space16"></div>
-                        <p>Creemos en ofrecer soluciones energéticas inteligentes, confiables y sostenibles que alimentan hogares, empresas e industrias de manera eficiente.</p>
+                        <p>We believe in delivering smart, reliable, and sustainable energy solutions that power homes, businesses, and industries efficiently.</p>
                         </div>
                     </div>
                     <div class="space24"></div>
@@ -519,14 +519,14 @@ document.addEventListener('DOMContentLoaded', function() {
                         <img src="assets/img/icons/ch-icons2.svg" alt="">
                         </div>
                         <div class="content-area">
-                        <a href="about.html">Soluciones Energéticas Personalizadas para Cada Necesidad</a>
+                        <a href="about.html">Customized Energy Solutions for Every Need</a>
                         <div class="space16"></div>
-                        <p>Creemos en ofrecer soluciones energéticas inteligentes, confiables y sostenibles que alimentan hogares, empresas e industrias de manera eficiente.</p>
+                        <p>We believe in delivering smart, reliable, and sustainable energy solutions that power homes, businesses, and industries efficiently.</p>
                         </div>
                     </div>
                     <div class="space38"></div>
                     <div class="btn-area1">
-                        <a href="project-single.html" class="vl-btn1">Saber Más <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="project-single.html" class="vl-btn1">Learn More <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
@@ -554,9 +554,9 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="row">
             <div class="col-xl-6 m-auto">
                 <div class="heading1 text-center space-margin60">
-                    <h5 class="vl-section-subtitle" data-aos="zoom-in-up" data-aos-duration="900"><img src="assets/img/elements/elements5.png" alt=""> <span>TESTIMONIOS</span> <img src="assets/img/elements/elements6.png" alt=""></h5>
+                    <h5 class="vl-section-subtitle" data-aos="zoom-in-up" data-aos-duration="900"><img src="assets/img/elements/elements5.png" alt=""> <span>TESTIMONIALS</span> <img src="assets/img/elements/elements6.png" alt=""></h5>
                   <div class="space16"></div>
-                  <h2 class="vl-section-title" data-aos="zoom-in-up" data-aos-duration="1000">Lo Que Dicen Nuestros Clientes</h2>
+                  <h2 class="vl-section-title" data-aos="zoom-in-up" data-aos-duration="1000">What Our Clients Say</h2>
                 </div>
             </div>
         </div>
@@ -589,7 +589,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <div class="text">
 Carlos Mendoza
                                 <div class="space12"></div>
-Director General, Industrias del Valle
+General Manager, Industrias del Valle
                             </div>
                         </div>
                     </div>
@@ -603,7 +603,7 @@ Director General, Industrias del Valle
                             <li><i class="fa-solid fa-star"></i></li>
                         </ul>
                         <div class="space16"></div>
-                        <p>"Las soluciones inteligentes de INTEGRA 365 han transformado mi hogar. Puedo monitorear y optimizar mi consumo de electricidad sin sacrificar comodidad. ¡Es la combinación perfecta de tecnología y eficiencia!"</p>
+                        <p>"INTEGRA 365's smart solutions have transformed my home. I can monitor and optimize my electricity consumption without sacrificing comfort. It's the perfect combination of technology and efficiency!"</p>
                          <div class="space24"></div>
                         <div class="content-man-area">
                             <div class="images">
@@ -619,7 +619,7 @@ Director General, Industrias del Valle
                             <div class="text">
                                 <a href="team-single.html">Sofía Rodríguez</a>
                                 <div class="space12"></div>
-                                <p>Arquitecta, Estudio Luminar</p>
+                                <p>Architect, Luminar Studio</p>
                             </div>
                         </div>
                     </div>
@@ -633,7 +633,7 @@ Director General, Industrias del Valle
                             <li><i class="fa-solid fa-star"></i></li>
                         </ul>
                         <div class="space16"></div>
-                        <p>"La transición a INTEGRA 365 fue la mejor decisión para nuestra empresa. El ahorro energético es notable y su sistema de respaldo nos garantiza operaciones continuas. ¡Excelente servicio!"</p>
+                        <p>"The transition to INTEGRA 365 was the best decision for our company. The energy savings are remarkable and their backup system guarantees continuous operations. Excellent service!"</p>
                         <div class="space24"></div>
                         <div class="content-man-area">
                             <div class="images">
@@ -649,7 +649,7 @@ Director General, Industrias del Valle
                             <div class="text">
                                 <a href="team-single.html">Javier Hernández</a>
                                 <div class="space12"></div>
-                                <p>Gerente de Operaciones, TechNova México</p>
+                                <p>Operations Manager, TechNova Mexico</p>
                             </div>
                         </div>
                     </div>
@@ -666,9 +666,9 @@ Director General, Industrias del Valle
         <div class="row">
             <div class="col-xl-6 m-auto">
                 <div class="heading1 text-center space-margin60">
-                  <h5 class="vl-section-subtitle" data-aos="zoom-in-up" data-aos-duration="900"><img src="assets/img/elements/elements5.png" alt=""> <span>MIEMBROS DEL EQUIPO INTEGRA 365</span> <img src="assets/img/elements/elements6.png" alt=""></h5>
+                  <h5 class="vl-section-subtitle" data-aos="zoom-in-up" data-aos-duration="900"><img src="assets/img/elements/elements5.png" alt=""> <span>INTEGRA 365 TEAM MEMBERS</span> <img src="assets/img/elements/elements6.png" alt=""></h5>
                   <div class="space16"></div>
-                  <h2 class="vl-section-title" data-aos="zoom-in-up" data-aos-duration="1000">Las Mentes Impulsando la Innovación</h2>
+                  <h2 class="vl-section-title" data-aos="zoom-in-up" data-aos-duration="1000">The Minds Driving Innovation</h2>
                 </div>
             </div>
         </div>
@@ -746,9 +746,9 @@ Director General, Industrias del Valle
     <div class="row">
       <div class="col-xl-6 m-auto">
           <div class="heading1 text-center space-margin60">
-            <h5 class="vl-section-subtitle" data-aos="zoom-in-up" data-aos-duration="900"><img src="assets/img/elements/elements5.png" alt=""> <span>PREGUNTAS FRECUENTES</span> <img src="assets/img/elements/elements6.png" alt=""></h5>
+            <h5 class="vl-section-subtitle" data-aos="zoom-in-up" data-aos-duration="900"><img src="assets/img/elements/elements5.png" alt=""> <span>FREQUENTLY ASKED QUESTIONS</span> <img src="assets/img/elements/elements6.png" alt=""></h5>
             <div class="space16"></div>
-            <h2 class="vl-section-title" data-aos="zoom-in-up" data-aos-duration="1000">Soluciones Energéticas Explicadas</h2>
+            <h2 class="vl-section-title" data-aos="zoom-in-up" data-aos-duration="1000">Energy Solutions Explained</h2>
           </div>
       </div>
     </div>
@@ -760,13 +760,13 @@ Director General, Industrias del Valle
                 <div class="accordion-item" data-aos="zoom-in-up" data-aos-duration="900">
                     <h2 class="accordion-header">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    ¿Cómo obtengo una solución energética personalizada?
+                    How do I get a customized energy solution?
                         <span class="number">01</span>
                     </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <p>¡Empezar es fácil! Contáctanos hoy y nuestro equipo te guiará a través del proceso de selección de la energía adecuada.</p>
+                        <p>Getting started is easy! Contact us today and our team will guide you through the process of selecting the right energy.</p>
                     </div>
                     </div>
                 </div>
@@ -774,13 +774,13 @@ Director General, Industrias del Valle
                 <div class="accordion-item" data-aos="zoom-in-up" data-aos-duration="1000">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    ¿Ofrecen soluciones de energía de respaldo?
+                    Do you offer backup power solutions?
                         <span class="number">02</span>
                     </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <p>¡Empezar es fácil! Contáctanos hoy y nuestro equipo te guiará a través del proceso de selección de la energía adecuada.</p>
+                        <p>Getting started is easy! Contact us today and our team will guide you through the process of selecting the right energy.</p>
                     </div>
                     </div>
                 </div>
@@ -788,13 +788,13 @@ Director General, Industrias del Valle
                 <div class="accordion-item" data-aos="zoom-in-up" data-aos-duration="1100">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    ¿Puedo usar energía solar para mi hogar?
+                    Can I use solar power for my home?
                         <span class="number">03</span>
                     </button>
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <p>¡Empezar es fácil! Contáctanos hoy y nuestro equipo te guiará a través del proceso de selección de la energía adecuada.</p>
+                        <p>Getting started is easy! Contact us today and our team will guide you through the process of selecting the right energy.</p>
                     </div>
                     </div>
                 </div>
@@ -802,13 +802,13 @@ Director General, Industrias del Valle
                 <div class="accordion-item" data-aos="zoom-in-up" data-aos-duration="1200">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                        ¿INTEGRA 365 ofrece opciones de financiamiento?
+                        Does INTEGRA 365 offer financing options?
                         <span class="number">04</span>
                     </button>
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <p>¡Empezar es fácil! Contáctanos hoy y nuestro equipo te guiará a través del proceso de selección de la energía adecuada.</p>
+                        <p>Getting started is easy! Contact us today and our team will guide you through the process of selecting the right energy.</p>
                     </div>
                     </div>
                 </div>
@@ -823,13 +823,13 @@ Director General, Industrias del Valle
                 <div class="accordion-item" data-aos="zoom-in-up" data-aos-duration="900">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-                    ¿Puede INTEGRA 365 ayudar con el almacenamiento de energía?
+                    Can INTEGRA 365 help with energy storage?
                         <span class="number">05</span>
                     </button>
                     </h2>
                     <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
                     <div class="accordion-body">
-                        <p>¡Empezar es fácil! Contáctanos hoy y nuestro equipo te guiará a través del proceso de selección de la energía adecuada.</p>
+                        <p>Getting started is easy! Contact us today and our team will guide you through the process of selecting the right energy.</p>
                     </div>
                     </div>
                 </div>
@@ -837,13 +837,13 @@ Director General, Industrias del Valle
                 <div class="accordion-item" data-aos="zoom-in-up" data-aos-duration="1000">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                    ¿Cuál es la vida útil de los paneles solares?
+                    What is the lifespan of solar panels?
                         <span class="number">06</span>
                     </button>
                     </h2>
                     <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
                     <div class="accordion-body">
-                        <p>¡Empezar es fácil! Contáctanos hoy y nuestro equipo te guiará a través del proceso de selección de la energía adecuada.</p>
+                        <p>Getting started is easy! Contact us today and our team will guide you through the process of selecting the right energy.</p>
                     </div>
                     </div>
                 </div>
@@ -851,13 +851,13 @@ Director General, Industrias del Valle
                 <div class="accordion-item" data-aos="zoom-in-up" data-aos-duration="1100">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                    ¿Las soluciones de INTEGRA 365 son ecológicas?
+                    Are INTEGRA 365 solutions eco-friendly?
                         <span class="number">07</span>
                     </button>
                     </h2>
                     <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
                     <div class="accordion-body">
-                        <p>¡Empezar es fácil! Contáctanos hoy y nuestro equipo te guiará a través del proceso de selección de la energía adecuada.</p>
+                        <p>Getting started is easy! Contact us today and our team will guide you through the process of selecting the right energy.</p>
                     </div>
                     </div>
                 </div>
@@ -865,13 +865,13 @@ Director General, Industrias del Valle
                 <div class="accordion-item" data-aos="zoom-in-up" data-aos-duration="1200">
                     <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-                        ¿Cómo empiezo con INTEGRA 365?
+                        How do I get started with INTEGRA 365?
                         <span class="number">08</span>
                     </button>
                     </h2>
                     <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample1">
                     <div class="accordion-body">
-                        <p>¡Empezar es fácil! Contáctanos hoy y nuestro equipo te guiará a través del proceso de selección de la energía adecuada.</p>
+                        <p>Getting started is easy! Contact us today and our team will guide you through the process of selecting the right energy.</p>
                     </div>
                     </div>
                 </div>
@@ -889,9 +889,9 @@ Director General, Industrias del Valle
      <div class="row">
         <div class="col-xl-6 m-auto">
            <div class="heading1 text-center space-margin60">
-            <h5 class="vl-section-subtitle" data-aos="zoom-in-up" data-aos-duration="900"><img src="assets/img/elements/elements5.png" alt=""> <span>BLOG Y NOTICIAS</span> <img src="assets/img/elements/elements6.png" alt=""></h5>
+            <h5 class="vl-section-subtitle" data-aos="zoom-in-up" data-aos-duration="900"><img src="assets/img/elements/elements5.png" alt=""> <span>BLOG & NEWS</span> <img src="assets/img/elements/elements6.png" alt=""></h5>
             <div class="space16"></div>
-            <h2 class="vl-section-title" data-aos="zoom-in-up" data-aos-duration="1000">¡Energía Más Inteligente, Futuro Más Brillante!</h2>
+            <h2 class="vl-section-title" data-aos="zoom-in-up" data-aos-duration="1000">Smarter Energy, Brighter Future!</h2>
           </div>
         </div>
      </div>
@@ -984,12 +984,12 @@ Director General, Industrias del Valle
              </ul>
           </div>
           <div class="space16"></div>
-          <h4 class="vl-blog-1-title"><a href="blog-single.html">INTEGRA 365 Tu Energía a Tu Manera</a></h4>
+          <h4 class="vl-blog-1-title"><a href="blog-single.html">INTEGRA 365 Your Energy Your Way</a></h4>
           <div class="space12"></div>
-          <p>Sumérgete en el mundo de los sistemas de energía inteligentes para el hogar y cómo INTEGRA 365 integra la tecnología para una gestión energética perfecta.</p>
+          <p>Dive into the world of smart home energy systems and how INTEGRA 365 integrates technology for seamless energy management.</p>
           <div class="space24"></div>
           <div class="vl-blog-1-icon">
-            <a href="blog-single.html" class="readmore">Saber Más <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="blog-single.html" class="readmore">Learn More <i class="fa-solid fa-arrow-right"></i></a>
          </div>
        </div>
       </div>
@@ -1009,14 +1009,14 @@ Director General, Industrias del Valle
           <div class="row align-items-center">
             <div class="col-xl-6">
               <div class="cta-heading">
-                <h2 data-aos="zoom-in" data-aos-duration="800">¡Energía Confiable y Segura para Tu Hogar y Negocio!</h2>
+                <h2 data-aos="zoom-in" data-aos-duration="800">Reliable and Secure Energy for Your Home and Business!</h2>
                 <div class="space16"></div>
-                <p data-aos="zoom-in" data-aos-duration="900">¡No más apagones, no más preocupaciones energéticas! INTEGRA 365 garantiza que tengas energía ininterrumpida de alta calidad cuando la necesites. ¡Obtén una cotización gratuita!</p>
+                <p data-aos="zoom-in" data-aos-duration="900">No more blackouts, no more energy worries! INTEGRA 365 guarantees you have uninterrupted high-quality power when you need it. Get a free quote!</p>
                 <div class="space32"></div>
                 <div class="form-area" data-aos="zoom-in" data-aos-duration="1100">
                   <form>
-                    <input type="text" placeholder="Tu Dirección de Correo Electrónico">
-                    <button class="vl-btn1" type="submit">Suscribirse <i class="fa-solid fa-arrow-right"></i></button>
+                    <input type="text" placeholder="Your Email Address">
+                    <button class="vl-btn1" type="submit">Subscribe <i class="fa-solid fa-arrow-right"></i></button>
                   </form>
                 </div>
               </div>
@@ -1045,7 +1045,7 @@ Director General, Industrias del Valle
         <div class="footer-logo-area">
           <div style="background-color: #fff; color: #000; padding: 10px 20px; font-weight: bold; font-size: 24px; display: inline-block; border-radius: 4px;">INTEGRA 365</div>
           <div class="space16"></div>
-          <p>Creemos en un mundo impulsado por energía inteligente y sostenible. INTEGRA 365 se dedica a proporcionar soluciones innovadoras que.</p>
+          <p>We believe in a world powered by smart and sustainable energy. INTEGRA 365 is dedicated to providing innovative solutions that.</p>
           <div class="space24"></div>
           <ul class="social-links">
             <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
@@ -1059,12 +1059,12 @@ Director General, Industrias del Valle
       <div class="col-xl col-md-6">
         <div class="space30 d-lg-none d-block"></div>
         <div class="footer-widget-area foot-padding1">
-          <h3>Enlaces Rápidos</h3>
+          <h3>Quick Links</h3>
           <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="index.html#about">Sobre Nosotros</a></li>
-            <li><a href="service.html">Servicios</a></li>
-            <li><a href="project.html">Por Qué Elegirnos</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="project.html">Why Choose Us</a></li>
             <li style="display:none;"><a href="privacy.html">Aviso de Privacidad</a></li>
           </ul>
         </div>
@@ -1073,13 +1073,13 @@ Director General, Industrias del Valle
       <div class="col-xl col-md-6">
         <div class="space30 d-lg-none d-block"></div>
         <div class="footer-widget-area foot-padding2">
-          <h3>Servicios</h3>
+          <h3>Services</h3>
           <ul>
-            <li><a href="service-single.html">Servicio al Cliente</a></li>
-            <li><a href="service-single.html">Proceso de Instalación</a></li>
-            <li><a href="service-single.html">Planes de Mantenimiento</a></li>
-            <li><a href="contact.html">Contáctenos</a></li>
-            <li><a href="faq.html">Preguntas Frecuentes</a></li>
+            <li><a href="service-single.html">Customer Service</a></li>
+            <li><a href="service-single.html">Installation Process</a></li>
+            <li><a href="service-single.html">Maintenance Plans</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="faq.html">FAQ</a></li>
           </ul>
         </div>
       </div>
@@ -1087,7 +1087,7 @@ Director General, Industrias del Valle
       <div class="col-xl col-md-6">
         <div class="space30 d-lg-none d-block"></div>
         <div class="footer-widget-area">
-          <h3>Contáctenos</h3>
+          <h3>Contact Us</h3>
           <ul>
               <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
               <path d="M12 14C11.2089 14 10.4355 13.7654 9.77772 13.3259C9.11992 12.8864 8.60723 12.2616 8.30448 11.5307C8.00173 10.7998 7.92252 9.99556 8.07686 9.21964C8.2312 8.44372 8.61216 7.73098 9.17157 7.17157C9.73098 6.61216 10.4437 6.2312 11.2196 6.07686C11.9956 5.92252 12.7998 6.00173 13.5307 6.30448C14.2616 6.60723 14.8864 7.11992 15.3259 7.77772C15.7654 8.43552 16 9.20888 16 10C15.9987 11.0605 15.5769 12.0772 14.827 12.827C14.0772 13.5769 13.0605 13.9987 12 14ZM12 7.6C11.5253 7.6 11.0613 7.74076 10.6666 8.00447C10.272 8.26819 9.96434 8.64302 9.78269 9.08156C9.60104 9.5201 9.55351 10.0027 9.64612 10.4682C9.73872 10.9338 9.9673 11.3614 10.3029 11.6971C10.6386 12.0327 11.0662 12.2613 11.5318 12.3539C11.9973 12.4465 12.4799 12.399 12.9184 12.2173C13.357 12.0357 13.7318 11.728 13.9955 11.3334C14.2592 10.9387 14.4 10.4747 14.4 10C14.3994 9.36368 14.1463 8.7536 13.6964 8.30365C13.2464 7.8537 12.6363 7.60064 12 7.6Z" fill="#5B5D61"/>
@@ -1104,15 +1104,15 @@ Director General, Industrias del Valle
       </div>
     </div>
     <div class="footer-keywords-visible" style="margin-top:18px; font-size:15px; font-weight:600; color:#0f0d0d; text-align:center;">
-      Mantenimiento eléctrico en CDMX · Electricista profesional · Instalaciones eléctricas residenciales y comerciales · Sistemas de informática · Soporte técnico empresas CDMX · Redes y cableado estructurado · CCTV y videovigilancia · Estado de México
+      Electrical maintenance in CDMX · Professional electrician · Residential and commercial electrical installations · Computer systems · Technical support companies CDMX · Networks and structured cabling · CCTV and video surveillance · Estado de México
     </div>
     <div class="space60"></div>
     <div class="col-xl-12">
       <div class="copyright-area">
-        <a href="#">© 2025 INTEGRA 365. Todos los Derechos Reservados.</a>
+        <a href="#">© 2025 INTEGRA 365. All Rights Reserved.</a>
         <ul>
-          <li><a href="aviso-de-privacidad.html" target="_blank">Política de Privacidad</a><span> | </span></li>
-          <li><a href="#">Términos y Condiciones</a></li>
+          <li><a href="aviso-de-privacidad.html" target="_blank">Privacy Policy</a><span> | </span></li>
+          <li><a href="#">Terms and Conditions</a></li>
         </ul>
       </div>
     </div>
@@ -1147,15 +1147,15 @@ Director General, Industrias del Valle
          </div>
          <div class="space16"></div>
          <div class="sidebar-content">
-              <p>Traemos el futuro de la energía a tu puerta con soluciones de energía de vanguardia, eficientes y ecológicas. Ya sea que estés buscando.</p>
+              <p>We bring the future of energy to your doorstep with cutting-edge, efficient, and eco-friendly power solutions. Whether you're looking for.</p>
          </div>
          <div class="space32"></div>
          <div class="btn-area">
-              <a href="contact.html" class="vl-btn1">Contáctanos ahora <i class="fa-solid fa-arrow-right"></i></a>
+              <a href="contact.html" class="vl-btn1">Contact us now <i class="fa-solid fa-arrow-right"></i></a>
          </div>
          <div class="space40"></div>
          <div class="social-link-area">
-              <h3 class="sidebar-heading">Enlaces Sociales</h3>
+              <h3 class="sidebar-heading">Social Links</h3>
               <ul>
                    <li>
                         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -1168,10 +1168,10 @@ Director General, Industrias del Valle
          </div>
          <div class="space40"></div>
          <div class="form-area">
-              <h3>Suscríbete al Boletín</h3>
+              <h3>Subscribe to Newsletter</h3>
               <form>
-                   <input type="text" placeholder="Dirección de Correo Electrónico*">
-                   <button type="submit" class="vl-btn1">suscribirse <i class="fa-solid fa-arrow-right"></i></button>
+                   <input type="text" placeholder="Email Address*">
+                   <button type="submit" class="vl-btn1">subscribe <i class="fa-solid fa-arrow-right"></i></button>
               </form>
          </div>
     </div>
