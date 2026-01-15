@@ -18,18 +18,6 @@ $(document).ready(function(){
 //========== HEADER ACTIVE ENDS ============= //
 
 //========== MOBILE MENU STARTS ============= //
-  // Normalize brand logo text (blue bg, white text)
-  $('.vl-logo a').each(function(){
-    $(this)
-      .text('integra365')
-      .attr('style','background-color: #1873CC; color: #fff; padding: 10px 20px; font-weight: bold; font-size: 20px; text-decoration: none; display: inline-block; border-radius: 4px;');
-  });
-  $('.vl-offcanvas-logo a').each(function(){
-    $(this)
-      .text('integra365')
-      .attr('style','background-color: #1873CC; color: #fff; padding: 10px 20px; font-weight: bold; font-size: 20px; text-decoration: none; display: inline-block; border-radius: 4px;');
-  });
-
   // Replace desktop/mobile menus with the right language (defaults to ES)
   var lang = (document.documentElement.lang || 'es').toLowerCase();
   lang = lang.indexOf('en') === 0 ? 'en' : 'es';
