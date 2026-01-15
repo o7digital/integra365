@@ -5372,7 +5372,7 @@ img {
 }
 .vl-footer1-section-area .footer-logo-area img {
   width: 100%;
-  max-width: 320px;
+  max-width: 480px;
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
