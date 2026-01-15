@@ -3306,8 +3306,8 @@ img {
   visibility: visible;
 }
 .vl-offcanvas .vl-offcanvas-logo {
-  height: 50px;
-  width: 164px;
+  height: 75px;
+  width: 246px;
   -o-object-fit: contain;
      object-fit: contain;
   filter: brightness(0) invert(1);
@@ -3463,8 +3463,8 @@ img {
   visibility: visible;
 }
 .homepage3-body .vl-offcanvas .vl-offcanvas-logo {
-  height: 50px;
-  width: 164px;
+  height: 75px;
+  width: 246px;
   -o-object-fit: contain;
      object-fit: contain;
   filter: brightness(0) invert(1);
@@ -3618,8 +3618,8 @@ img {
   visibility: visible;
 }
 .homepage4-body .vl-offcanvas .vl-offcanvas-logo {
-  height: 50px;
-  width: 164px;
+  height: 75px;
+  width: 246px;
   -o-object-fit: contain;
      object-fit: contain;
   filter: brightness(0) invert(1);
@@ -5372,7 +5372,7 @@ img {
 }
 .vl-footer1-section-area .footer-logo-area img {
   width: 100%;
-  max-width: 480px;
+  max-width: 336px;
   height: auto;
   -o-object-fit: contain;
      object-fit: contain;
@@ -5667,8 +5667,8 @@ img {
   margin: -4px 4px 0 0;
 }
 .homepage1-body .vl-transparent-header .vl-logo img {
-  width: 164px;
-  height: 50px;
+  width: 246px;
+  height: 75px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -6025,8 +6025,8 @@ img {
   opacity: 30%;
 }
 .homepage2-body .vl-transparent-header .vl-logo img {
-  width: 164px;
-  height: 50px;
+  width: 246px;
+  height: 75px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -6383,8 +6383,8 @@ img {
   opacity: 30%;
 }
 .homepage3-body .vl-transparent-header .vl-logo img {
-  width: 164px;
-  height: 50px;
+  width: 246px;
+  height: 75px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -6822,8 +6822,8 @@ img {
   filter: brightness(0) invert(1);
 }
 .homepage4-body .vl-transparent-header .vl-logo img {
-  width: 164px;
-  height: 50px;
+  width: 246px;
+  height: 75px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -7182,8 +7182,8 @@ img {
   opacity: 30%;
 }
 .homepage5-body .vl-transparent-header .vl-logo img {
-  width: 164px;
-  height: 50px;
+  width: 246px;
+  height: 75px;
   -o-object-fit: contain;
      object-fit: contain;
 }
