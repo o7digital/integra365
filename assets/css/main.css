@@ -5568,15 +5568,16 @@ img {
   left: 0;
   right: 0;
   z-index: 99;
+  background: #000;
 }
 @media (max-width: 767px) {
   .homepage1-body .vl-transparent-header {
-    background: var(--ztc-bg-bg-2);
+    background: #000;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .homepage1-body .vl-transparent-header {
-    background: var(--ztc-bg-bg-2);
+    background: #000;
   }
 }
 .homepage1-body .vl-transparent-header::after {
@@ -5590,7 +5591,7 @@ img {
   opacity: 30%;
 }
 .homepage1-body .vl-transparent-header .header-top-area {
-  background: var(--ztc-bg-bg-1);
+  background: #000;
   transition: all 0.4s;
   padding: 10px;
 }
@@ -5989,7 +5990,7 @@ img {
   right: 0;
   top: 0;
   animation: 0.7s ease-in-out 0s normal none 1 running vlfadeInDown;
-  background-color: rgba(0, 0, 0, 0.76);
+  background-color: #000;
 }
 .homepage1-body .header-sticky .header-top-area {
   display: none;
@@ -6003,15 +6004,16 @@ img {
   right: 0;
   z-index: 99;
   padding: 16px 0;
+  background: #000;
 }
 @media (max-width: 767px) {
   .homepage2-body .vl-transparent-header {
-    background: var(--ztc-bg-bg-2);
+    background: #000;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .homepage2-body .vl-transparent-header {
-    background: var(--ztc-bg-bg-2);
+    background: #000;
   }
 }
 .homepage2-body .vl-transparent-header::after {
@@ -6347,7 +6349,7 @@ img {
   right: 0;
   top: 0;
   animation: 0.7s ease-in-out 0s normal none 1 running vlfadeInDown;
-  background-color: rgba(0, 0, 0, 0.76);
+  background-color: #000;
 }
 .homepage2-body .header-sticky .header-top-area {
   display: none;
@@ -6361,15 +6363,16 @@ img {
   right: 0;
   z-index: 99;
   padding: 16px 0;
+  background: #000;
 }
 @media (max-width: 767px) {
   .homepage3-body .vl-transparent-header {
-    background: var(--ztc-bg-bg-1);
+    background: #000;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .homepage3-body .vl-transparent-header {
-    background: var(--ztc-bg-bg-1);
+    background: #000;
   }
 }
 .homepage3-body .vl-transparent-header::after {
@@ -6707,7 +6710,7 @@ img {
   right: 0;
   top: 0;
   animation: 0.7s ease-in-out 0s normal none 1 running vlfadeInDown;
-  background-color: var(--ztc-bg-bg-1);
+  background-color: #000;
 }
 .homepage3-body .header-sticky .header-top-area {
   display: none;
@@ -6720,16 +6723,16 @@ img {
   left: 0;
   right: 0;
   z-index: 99;
-  background: var(--ztc-bg-bg-1);
+  background: #000;
 }
 @media (max-width: 767px) {
   .homepage4-body .vl-transparent-header {
-    background: var(--ztc-bg-bg-1);
+    background: #000;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .homepage4-body .vl-transparent-header {
-    background: var(--ztc-bg-bg-1);
+    background: #000;
   }
 }
 .homepage4-body .vl-transparent-header::after {
@@ -6743,7 +6746,7 @@ img {
   opacity: 30%;
 }
 .homepage4-body .vl-transparent-header .header-top-area {
-  background: var(--ztc-bg-bg-2);
+  background: #000;
   transition: all 0.4s;
   padding: 10px;
 }
@@ -7146,7 +7149,7 @@ img {
   right: 0;
   top: 0;
   animation: 0.7s ease-in-out 0s normal none 1 running vlfadeInDown;
-  background-color: var(--ztc-bg-bg-1);
+  background-color: #000;
 }
 .homepage4-body .header-sticky .header-top-area {
   display: none;
@@ -7160,15 +7163,16 @@ img {
   right: 0;
   z-index: 99;
   padding: 16px 0;
+  background: #000;
 }
 @media (max-width: 767px) {
   .homepage5-body .vl-transparent-header {
-    background: var(--ztc-bg-bg-2);
+    background: #000;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .homepage5-body .vl-transparent-header {
-    background: var(--ztc-bg-bg-2);
+    background: #000;
   }
 }
 .homepage5-body .vl-transparent-header::after {
@@ -7504,7 +7508,7 @@ img {
   right: 0;
   top: 0;
   animation: 0.7s ease-in-out 0s normal none 1 running vlfadeInDown;
-  background-color: rgba(0, 0, 0, 0.76);
+  background-color: #000;
 }
 .homepage5-body .header-sticky .header-top-area {
   display: none;

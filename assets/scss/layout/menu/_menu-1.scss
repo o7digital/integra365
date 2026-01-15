@@ -10,11 +10,12 @@
         left: 0;
         right: 0;
         z-index: 99; 
+        background: #000;
         @media #{$xs} {
-          background: var(--ztc-bg-bg-2);
+          background: #000;
         }  
         @media #{$md} {
-          background: var(--ztc-bg-bg-2);
+          background: #000;
         }
         &::after {
             position: absolute;
@@ -27,7 +28,7 @@
             opacity: 30%;
         }
         .header-top-area {
-            background: var(--ztc-bg-bg-1);
+            background: #000;
             transition: all .4s;
             padding: 10px;
             @media #{$xs} {
@@ -444,7 +445,7 @@
       top: 0;
       -webkit-animation: .7s ease-in-out 0s normal none 1 running vlfadeInDown;
       animation: .7s ease-in-out 0s normal none 1 running vlfadeInDown;
-      background-color: rgba(0, 0, 0, 0.76);
+      background-color: #000;
       .header-top-area {
         display: none;
         transition: all .4s;
@@ -461,11 +462,12 @@
         right: 0;
         z-index: 99; 
         padding: 16px 0;
+        background: #000;
         @media #{$xs} {
-          background: var(--ztc-bg-bg-2);
+          background: #000;
         }  
         @media #{$md} {
-          background: var(--ztc-bg-bg-2);
+          background: #000;
         }
         &::after {
             position: absolute;
@@ -820,7 +822,7 @@
       top: 0;
       -webkit-animation: .7s ease-in-out 0s normal none 1 running vlfadeInDown;
       animation: .7s ease-in-out 0s normal none 1 running vlfadeInDown;
-      background-color: rgba(0, 0, 0, 0.76);
+      background-color: #000;
       .header-top-area {
         display: none;
         transition: all .4s;
@@ -837,11 +839,12 @@
         right: 0;
         z-index: 99; 
         padding: 16px 0;
+        background: #000;
         @media #{$xs} {
-          background: var(--ztc-bg-bg-1);
+          background: #000;
         }  
         @media #{$md} {
-          background: var(--ztc-bg-bg-1);
+          background: #000;
         }
         &::after {
             position: absolute;
@@ -1198,7 +1201,7 @@
       top: 0;
       -webkit-animation: .7s ease-in-out 0s normal none 1 running vlfadeInDown;
       animation: .7s ease-in-out 0s normal none 1 running vlfadeInDown;
-      background-color: var(--ztc-bg-bg-1);
+      background-color: #000;
       .header-top-area {
         display: none;
         transition: all .4s;
@@ -1214,12 +1217,12 @@
         left: 0;
         right: 0;
         z-index: 99; 
-        background: var(--ztc-bg-bg-1);
+        background: #000;
         @media #{$xs} {
-          background: var(--ztc-bg-bg-1);
+          background: #000;
         }  
         @media #{$md} {
-          background: var(--ztc-bg-bg-1);
+          background: #000;
         }
         &::after {
             position: absolute;
@@ -1233,7 +1236,7 @@
         }
 
          .header-top-area {
-            background: var(--ztc-bg-bg-2);
+            background: #000;
             transition: all .4s;
             padding: 10px;
             @media #{$xs} {
@@ -1654,7 +1657,7 @@
       top: 0;
       -webkit-animation: .7s ease-in-out 0s normal none 1 running vlfadeInDown;
       animation: .7s ease-in-out 0s normal none 1 running vlfadeInDown;
-      background-color: var(--ztc-bg-bg-1);
+      background-color: #000;
       .header-top-area {
         display: none;
         transition: all .4s;
@@ -1671,11 +1674,12 @@
         right: 0;
         z-index: 99; 
         padding: 16px 0;
+        background: #000;
         @media #{$xs} {
-          background: var(--ztc-bg-bg-2);
+          background: #000;
         }  
         @media #{$md} {
-          background: var(--ztc-bg-bg-2);
+          background: #000;
         }
         &::after {
             position: absolute;
@@ -2030,7 +2034,7 @@
       top: 0;
       -webkit-animation: .7s ease-in-out 0s normal none 1 running vlfadeInDown;
       animation: .7s ease-in-out 0s normal none 1 running vlfadeInDown;
-      background-color: rgba(0, 0, 0, 0.76);
+      background-color: #000;
       .header-top-area {
         display: none;
         transition: all .4s;
