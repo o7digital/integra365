@@ -12944,4 +12944,18 @@ img {
   opacity: 40%;
 }
 
+/* Larger site logo without changing header height */
+@media only screen and (min-width: 1200px) {
+  .vl-transparent-header .vl-logo {
+    overflow: visible;
+  }
+  .vl-transparent-header .vl-logo img {
+    max-width: none;
+    width: 369px;
+    height: 112.5px;
+    transform: scale(1.35) translateY(6px);
+    transform-origin: left center;
+  }
+}
+
 /*============= ABOUT CSS AREA ENDS ===============*//*# sourceMappingURL=main.css.map */
