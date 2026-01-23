@@ -18,119 +18,168 @@ $(document).ready(function(){
 //========== HEADER ACTIVE ENDS ============= //
 
 //========== MOBILE MENU STARTS ============= //
-  // Replace desktop/mobile menus with the right language (defaults to ES)
-  var lang = (document.documentElement.lang || 'es').toLowerCase();
-  lang = lang.indexOf('en') === 0 ? 'en' : 'es';
+  // Replace menus based on page language (ES/EN/FR/IT)
+  var lang = (document.documentElement.lang || 'es').toLowerCase().slice(0,2);
+  var supportedMenuLangs = ['es','en','fr','it'];
 
-  var menuByLang = {
-    es: {
-      desktop: '<ul>'+
-                '<li><a href="index.html">Inicio</a></li>'+
-                '<li><a href="index.html#about">Nosotros</a></li>'+
-                '<li class="has-dropdown">'+
-                  '<a href="#">Servicios <span><i class="fa-solid fa-angle-down d-xl-inline d-none"></i></span></a>'+
-                  '<ul class="sub-menu">'+
-                    '<li><a href="service.html">Servicios Eléctricos</a></li>'+
-                    '<li><a href="sistemas.html">Sistemas e Infraestructura</a></li>'+
-                  '</ul>'+
-                '</li>'+
-                '<li><a href="faq-es.html">Preguntas Frecuentes</a></li>'+
-                '<li><a href="contact.html">Contacto</a></li>'+
-                '</ul>',
-      mobile:  '<ul>'+
-                '<li><a href="index.html">Inicio</a></li>'+
-                '<li><a href="index.html#about">Nosotros</a></li>'+
-                '<li><a href="service.html">Servicios</a></li>'+
-                '<li><a href="sistemas.html">Sistemas e Infraestructura</a></li>'+
-                '<li><a href="faq-es.html">Preguntas Frecuentes</a></li>'+
-                '<li><a href="contact.html">Contacto</a></li>'+
-                '</ul>'
-    },
-    en: {
-      desktop: '<ul>'+
-                '<li><a href="index-en.html">Home</a></li>'+
-                '<li><a href="index-en.html#about">About Us</a></li>'+
-                '<li class="has-dropdown">'+
-                  '<a href="#">Services <span><i class="fa-solid fa-angle-down d-xl-inline d-none"></i></span></a>'+
-                  '<ul class="sub-menu">'+
-                    '<li><a href="service-en.html">Electrical Services</a></li>'+
-                    '<li><a href="sistemas-en.html">Systems & Infrastructure</a></li>'+
-                  '</ul>'+
-                '</li>'+
-                '<li><a href="faq-en.html">FAQ</a></li>'+
-                '<li><a href="contact-en.html">Contact</a></li>'+
-                '</ul>',
-      mobile:  '<ul>'+
-                '<li><a href="index-en.html">Home</a></li>'+
-                '<li><a href="index-en.html#about">About Us</a></li>'+
-                '<li><a href="service-en.html">Services</a></li>'+
-                '<li><a href="sistemas-en.html">Systems & Infrastructure</a></li>'+
-                '<li><a href="faq-en.html">FAQ</a></li>'+
-                '<li><a href="contact-en.html">Contact</a></li>'+
-                '</ul>'
+  if (supportedMenuLangs.indexOf(lang) !== -1) {
+    var menuByLang = {
+      es: {
+        desktop: '<ul>'+
+                  '<li><a href="index.html">Inicio</a></li>'+
+                  '<li><a href="index.html#about">Nosotros</a></li>'+
+                  '<li class="has-dropdown">'+
+                    '<a href="#">Servicios <span><i class="fa-solid fa-angle-down d-xl-inline d-none"></i></span></a>'+
+                    '<ul class="sub-menu">'+
+                      '<li><a href="service.html">Servicios Eléctricos</a></li>'+
+                      '<li><a href="sistemas.html">Sistemas e Infraestructura</a></li>'+
+                    '</ul>'+
+                  '</li>'+
+                  '<li><a href="faq-es.html">Preguntas Frecuentes</a></li>'+
+                  '<li><a href="contact.html">Contacto</a></li>'+
+                  '</ul>',
+        mobile:  '<ul>'+
+                  '<li><a href="index.html">Inicio</a></li>'+
+                  '<li><a href="index.html#about">Nosotros</a></li>'+
+                  '<li><a href="service.html">Servicios</a></li>'+
+                  '<li><a href="sistemas.html">Sistemas e Infraestructura</a></li>'+
+                  '<li><a href="faq-es.html">Preguntas Frecuentes</a></li>'+
+                  '<li><a href="contact.html">Contacto</a></li>'+
+                  '</ul>'
+      },
+      en: {
+        desktop: '<ul>'+
+                  '<li><a href="index-en.html">Home</a></li>'+
+                  '<li><a href="index-en.html#about">About Us</a></li>'+
+                  '<li class="has-dropdown">'+
+                    '<a href="#">Services <span><i class="fa-solid fa-angle-down d-xl-inline d-none"></i></span></a>'+
+                    '<ul class="sub-menu">'+
+                      '<li><a href="service-en.html">Electrical Services</a></li>'+
+                      '<li><a href="sistemas-en.html">Systems & Infrastructure</a></li>'+
+                    '</ul>'+
+                  '</li>'+
+                  '<li><a href="faq-en.html">FAQ</a></li>'+
+                  '<li><a href="contact-en.html">Contact</a></li>'+
+                  '</ul>',
+        mobile:  '<ul>'+
+                  '<li><a href="index-en.html">Home</a></li>'+
+                  '<li><a href="index-en.html#about">About Us</a></li>'+
+                  '<li><a href="service-en.html">Services</a></li>'+
+                  '<li><a href="sistemas-en.html">Systems & Infrastructure</a></li>'+
+                  '<li><a href="faq-en.html">FAQ</a></li>'+
+                  '<li><a href="contact-en.html">Contact</a></li>'+
+                  '</ul>'
+      },
+      fr: {
+        desktop: '<ul>'+
+                  '<li><a href="index-fr.html">Accueil</a></li>'+
+                  '<li><a href="index-fr.html#about">À propos</a></li>'+
+                  '<li class="has-dropdown">'+
+                    '<a href="#">Services <span><i class="fa-solid fa-angle-down d-xl-inline d-none"></i></span></a>'+
+                    '<ul class="sub-menu">'+
+                      '<li><a href="service-fr.html">Services électriques</a></li>'+
+                      '<li><a href="sistemas-fr.html">Systèmes et infrastructures</a></li>'+
+                    '</ul>'+
+                  '</li>'+
+                  '<li><a href="faq-fr.html">Questions fréquentes</a></li>'+
+                  '<li><a href="contact-fr.html">Contact</a></li>'+
+                  '</ul>',
+        mobile:  '<ul>'+
+                  '<li><a href="index-fr.html">Accueil</a></li>'+
+                  '<li><a href="index-fr.html#about">À propos</a></li>'+
+                  '<li><a href="service-fr.html">Services</a></li>'+
+                  '<li><a href="sistemas-fr.html">Systèmes et infrastructures</a></li>'+
+                  '<li><a href="faq-fr.html">Questions fréquentes</a></li>'+
+                  '<li><a href="contact-fr.html">Contact</a></li>'+
+                  '</ul>'
+      },
+      it: {
+        desktop: '<ul>'+
+                  '<li><a href="index-it.html">Home</a></li>'+
+                  '<li><a href="index-it.html#about">Chi siamo</a></li>'+
+                  '<li class="has-dropdown">'+
+                    '<a href="#">Servizi <span><i class="fa-solid fa-angle-down d-xl-inline d-none"></i></span></a>'+
+                    '<ul class="sub-menu">'+
+                      '<li><a href="service-it.html">Servizi elettrici</a></li>'+
+                      '<li><a href="sistemas-it.html">Sistemi e infrastrutture</a></li>'+
+                    '</ul>'+
+                  '</li>'+
+                  '<li><a href="faq-it.html">Domande frequenti</a></li>'+
+                  '<li><a href="contact-it.html">Contatto</a></li>'+
+                  '</ul>',
+        mobile:  '<ul>'+
+                  '<li><a href="index-it.html">Home</a></li>'+
+                  '<li><a href="index-it.html#about">Chi siamo</a></li>'+
+                  '<li><a href="service-it.html">Servizi</a></li>'+
+                  '<li><a href="sistemas-it.html">Sistemi e infrastrutture</a></li>'+
+                  '<li><a href="faq-it.html">Domande frequenti</a></li>'+
+                  '<li><a href="contact-it.html">Contatto</a></li>'+
+                  '</ul>'
+      }
+    };
+
+    var activeMenu = menuByLang[lang] || menuByLang.es;
+
+    $('.vl-mobile-menu-active').each(function(){
+      $(this).html(activeMenu.desktop);
+    });
+
+    var vlSideMenu = $('.vl-offcanvas-menu nav');
+    if (vlSideMenu.length) {
+      vlSideMenu.empty().html(activeMenu.mobile);
+      setTimeout(function(){
+        vlSideMenu.html(activeMenu.mobile);
+      }, 50);
     }
-  };
-  var activeMenu = menuByLang[lang] || menuByLang.es;
 
-  $('.vl-mobile-menu-active').each(function(){
-    $(this).html(activeMenu.desktop);
-  });
-
-  var vlSideMenu = $('.vl-offcanvas-menu nav');
-  if (vlSideMenu.length) {
-    vlSideMenu.empty().html(activeMenu.mobile);
-    // As a safeguard, ensure only one UL exists
-    setTimeout(function(){
-      vlSideMenu.html(activeMenu.mobile);
-    }, 50);
+    // Language switcher adjustments kept for ES/EN only
+    if (lang === 'es' || lang === 'en') {
+      var currentFile = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
+      function buildLangPath(targetLang) {
+        if (targetLang === lang) return currentFile;
+        if (targetLang === 'en') {
+          if (currentFile.indexOf('-en.html') !== -1) return currentFile;
+          if (currentFile.indexOf('-es.html') !== -1) return currentFile.replace('-es.html','-en.html');
+          return currentFile.replace('.html','-en.html');
+        }
+        if (currentFile.indexOf('-es.html') !== -1) return currentFile;
+        if (currentFile.indexOf('-en.html') !== -1) return currentFile.replace('-en.html','-es.html');
+        return currentFile.indexOf('faq.html') !== -1 ? currentFile.replace('.html','-es.html') : currentFile;
+      }
+      var esHref = buildLangPath('es');
+      var enHref = buildLangPath('en');
+      var mobileLangHTML = '<div class="mobile-language-switcher" style="display:flex; gap:8px; margin-bottom:20px;">'+
+                            '<a href="'+esHref+'" style="color: #0F1D40; padding: 8px 12px; background:'+(lang === 'es' ? 'rgba(24,115,204,0.12)' : 'rgba(24,115,204,0.06)')+'; border-radius: 6px; text-decoration: none; font-size: 14px; font-weight:'+(lang === 'es' ? '700' : '500')+';">ES</a>'+
+                            '<a href="'+enHref+'" style="color: #0F1D40; padding: 8px 12px; background:'+(lang === 'en' ? 'rgba(24,115,204,0.12)' : 'rgba(24,115,204,0.06)')+'; border-radius: 6px; text-decoration: none; font-size: 14px; font-weight:'+(lang === 'en' ? '700' : '500')+';">EN</a>'+
+                           '</div>';
+      var $offcanvasWrapper = $('.vl-offcanvas-wrapper');
+      if ($offcanvasWrapper.length && !$offcanvasWrapper.find('.mobile-language-switcher').length) {
+        $offcanvasWrapper.find('.vl-offcanvas-header').after(mobileLangHTML);
+      }
+      var desktopLangHTML = '<div class="language-switcher" style="display: inline-flex; align-items: center; margin-right: 15px; gap: 8px;">'+
+                            '<a class="lang-es" href="'+esHref+'" style="color: #fff; padding: 8px 12px; background:'+(lang === 'es' ? 'rgba(255,255,255,0.3)' : 'rgba(255,255,255,0.1)')+'; border-radius: 4px; text-decoration: none; font-size: 14px; font-weight:'+(lang === 'es' ? 'bold' : 'normal')+'; white-space: nowrap;">ES</a>'+
+                            '<a class="lang-en" href="'+enHref+'" style="color: #fff; padding: 8px 12px; background:'+(lang === 'en' ? 'rgba(255,255,255,0.3)' : 'rgba(255,255,255,0.1)')+'; border-radius: 4px; text-decoration: none; font-size: 14px; font-weight:'+(lang === 'en' ? 'bold' : 'normal')+'; white-space: nowrap;">EN</a>'+
+                           '</div>';
+      $('.sidebar_btn-area').each(function(){
+        var $wrapper = $(this).find('.language-switcher');
+        if (!$wrapper.length) {
+          $(this).prepend(desktopLangHTML);
+          $wrapper = $(this).find('.language-switcher');
+        }
+        var $es = $wrapper.find('.lang-es'), $en = $wrapper.find('.lang-en');
+        if ($es.length) {
+          $es.attr('href', esHref)
+             .css('background', lang === 'es' ? 'rgba(255,255,255,0.3)' : 'rgba(255,255,255,0.1)')
+             .css('font-weight', lang === 'es' ? 'bold' : 'normal');
+        }
+        if ($en.length) {
+          $en.attr('href', enHref)
+             .css('background', lang === 'en' ? 'rgba(255,255,255,0.3)' : 'rgba(255,255,255,0.1)')
+             .css('font-weight', lang === 'en' ? 'bold' : 'normal');
+        }
+      });
+    }
   }
-
-  // Add language switcher to mobile/offcanvas header
-  var currentFile = (window.location.pathname.split('/').pop() || 'index.html').toLowerCase();
-  function buildLangPath(targetLang) {
-    if (targetLang === lang) return currentFile;
-    if (targetLang === 'en') {
-      if (currentFile.indexOf('-en.html') !== -1) return currentFile;
-      if (currentFile.indexOf('-es.html') !== -1) return currentFile.replace('-es.html','-en.html');
-      return currentFile.replace('.html','-en.html');
-    }
-    // spanish
-    if (currentFile.indexOf('-es.html') !== -1) return currentFile;
-    if (currentFile.indexOf('-en.html') !== -1) return currentFile.replace('-en.html','-es.html');
-    return currentFile.indexOf('faq.html') !== -1 ? currentFile.replace('.html','-es.html') : currentFile;
-  }
-  var esHref = buildLangPath('es');
-  var enHref = buildLangPath('en');
-  var mobileLangHTML = '<div class="mobile-language-switcher" style="display:flex; gap:8px; margin-bottom:20px;">'+
-                        '<a href="'+esHref+'" style="color: #0F1D40; padding: 8px 12px; background:'+(lang === 'es' ? 'rgba(24,115,204,0.12)' : 'rgba(24,115,204,0.06)')+'; border-radius: 6px; text-decoration: none; font-size: 14px; font-weight:'+(lang === 'es' ? '700' : '500')+';">ES</a>'+
-                        '<a href="'+enHref+'" style="color: #0F1D40; padding: 8px 12px; background:'+(lang === 'en' ? 'rgba(24,115,204,0.12)' : 'rgba(24,115,204,0.06)')+'; border-radius: 6px; text-decoration: none; font-size: 14px; font-weight:'+(lang === 'en' ? '700' : '500')+';">EN</a>'+
-                       '</div>';
-  var $offcanvasWrapper = $('.vl-offcanvas-wrapper');
-  if ($offcanvasWrapper.length && !$offcanvasWrapper.find('.mobile-language-switcher').length) {
-    $offcanvasWrapper.find('.vl-offcanvas-header').after(mobileLangHTML);
-  }
-  var desktopLangHTML = '<div class="language-switcher" style="display: inline-flex; align-items: center; margin-right: 15px; gap: 8px;">'+
-                        '<a class="lang-es" href="'+esHref+'" style="color: #fff; padding: 8px 12px; background:'+(lang === 'es' ? 'rgba(255,255,255,0.3)' : 'rgba(255,255,255,0.1)')+'; border-radius: 4px; text-decoration: none; font-size: 14px; font-weight:'+(lang === 'es' ? 'bold' : 'normal')+'; white-space: nowrap;">ES</a>'+
-                        '<a class="lang-en" href="'+enHref+'" style="color: #fff; padding: 8px 12px; background:'+(lang === 'en' ? 'rgba(255,255,255,0.3)' : 'rgba(255,255,255,0.1)')+'; border-radius: 4px; text-decoration: none; font-size: 14px; font-weight:'+(lang === 'en' ? 'bold' : 'normal')+'; white-space: nowrap;">EN</a>'+
-                       '</div>';
-  $('.sidebar_btn-area').each(function(){
-    var $wrapper = $(this).find('.language-switcher');
-    if (!$wrapper.length) {
-      $(this).prepend(desktopLangHTML);
-      $wrapper = $(this).find('.language-switcher');
-    }
-    var $es = $wrapper.find('.lang-es'), $en = $wrapper.find('.lang-en');
-    if ($es.length) {
-      $es.attr('href', esHref)
-         .css('background', lang === 'es' ? 'rgba(255,255,255,0.3)' : 'rgba(255,255,255,0.1)')
-         .css('font-weight', lang === 'es' ? 'bold' : 'normal');
-    }
-    if ($en.length) {
-      $en.attr('href', enHref)
-         .css('background', lang === 'en' ? 'rgba(255,255,255,0.3)' : 'rgba(255,255,255,0.1)')
-         .css('font-weight', lang === 'en' ? 'bold' : 'normal');
-    }
-  });
   
   if ($(vlSideMenu).find('.sub-menu, .vl-mega-menu').length !== 0) {
     $(vlSideMenu).find('.sub-menu, .vl-mega-menu').parent().append('<button class="vl-menu-close"><i class="fas fa-chevron-right"></i></button>');
