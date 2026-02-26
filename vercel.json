@@ -1,9 +1,1 @@
-{
-  "redirects": [
-    {
-      "source": "/:path((?!maintenance\\.html$).*)",
-      "destination": "/maintenance.html",
-      "permanent": false
-    }
-  ]
-}
+{}

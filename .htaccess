@@ -1,12 +1,2 @@
-# Mode maintenance global
-# Pour remettre le site en ligne, renommer ou supprimer ce fichier .htaccess
-
-<IfModule mod_rewrite.c>
-RewriteEngine On
-
-# Laisse accessible la page de maintenance
-RewriteCond %{REQUEST_URI} !^/maintenance\.html$ [NC]
-
-# Redirige toutes les autres URLs vers la page de maintenance
-RewriteRule ^.*$ /maintenance.html [R=302,L]
-</IfModule>
+# Site en ligne (mode maintenance désactive)
+# Pour repasser en maintenance, restaurer la regle de redirection vers /maintenance.html.
