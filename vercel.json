@@ -1,8 +1,16 @@
 {
-	"rewrites": [
-		{
-			"source": "/:path*",
-			"destination": "/maintenance.html"
-		}
-	]
+  "routes": [
+    {
+      "src": "/\\.well-known/acme-challenge/(.*)",
+      "dest": "/.well-known/acme-challenge/$1"
+    },
+    {
+      "src": "/maintenance\\.html",
+      "dest": "/maintenance.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/maintenance.html"
+    }
+  ]
 }
