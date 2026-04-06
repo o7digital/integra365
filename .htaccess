@@ -1,2 +1,11 @@
-# Site en ligne (mode maintenance désactive)
-# Pour repasser en maintenance, restaurer la regle de redirection vers /maintenance.html.
+# Force maintenance mode on Apache
+RewriteEngine On
+
+# Allow direct access to the maintenance page itself
+RewriteCond %{REQUEST_URI} !^/maintenance\.html$ [NC]
+
+# Keep ACME challenges reachable for SSL renewals
+RewriteCond %{REQUEST_URI} !^/\.well-known/acme-challenge/ [NC]
+
+# Redirect everything else to the maintenance page
+RewriteRule ^.*$ /maintenance.html [R=302,L]
