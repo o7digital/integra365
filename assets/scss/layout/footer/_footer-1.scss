@@ -65,6 +65,15 @@
         }
     }
 
+    html[lang="es"] &,
+    html[lang="en"] & {
+        .footer-logo-area {
+            .social-links {
+                display: none;
+            }
+        }
+    }
+
     .footer-widget-area {
         &.foot-padding1 {
             padding-left: 70px;
