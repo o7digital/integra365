@@ -5412,6 +5412,10 @@ img {
   transition: all 0.4s;
   border: 1px solid var(--ztc-text-text-4);
 }
+html[lang=es] .vl-footer1-section-area .footer-logo-area .social-links,
+html[lang=en] .vl-footer1-section-area .footer-logo-area .social-links {
+  display: none;
+}
 .vl-footer1-section-area .footer-widget-area.foot-padding1 {
   padding-left: 70px;
 }
